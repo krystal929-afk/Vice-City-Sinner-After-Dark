@@ -1,0 +1,36 @@
+/* ACID RIVIERA / Black is the outfit; color is the attitude. */
+html[data-vcs-theme="acid-riviera"]{--paper:#101314;--paper-light:#1b1e20;--ink:#eeeee6;--hair:#5f6560;--muted:#d7d9ce;--serif:"Barlow Condensed","Arial Narrow",sans-serif}
+html[data-vcs-theme="acid-riviera"] body{background:#050606;background-image:radial-gradient(ellipse at 110% -10%,#23312d,transparent 60%)}
+html[data-vcs-theme="acid-riviera"] .newspaper-wrap{background:#101314;border:1px solid #39423e;box-shadow:0 16px 100px #000d}
+html[data-vcs-theme="acid-riviera"] .masthead-name{font-family:"Barlow Condensed",sans-serif;color:#efefdf}
+html[data-vcs-theme="acid-riviera"] .masthead-name span{font-size:clamp(5.5rem,12vw,12rem);font-weight:500;letter-spacing:.015em}
+html[data-vcs-theme="acid-riviera"] .masthead-name strong{font-size:clamp(6.5rem,15vw,16rem);font-weight:700;letter-spacing:.02em}
+html[data-vcs-theme="acid-riviera"] .masthead-eyebrow{color:#bedca4}
+html[data-vcs-theme="acid-riviera"] .masthead-under{border-color:#777d6e}
+html[data-vcs-theme="acid-riviera"] .issue-strap{background:var(--vcs-accent,#b8ff2d);color:#090c0b;border:0;padding:15px}
+html[data-vcs-theme="acid-riviera"] .paper-nav{border-color:#626c60}
+html[data-vcs-theme="acid-riviera"] .paper-nav a:hover{color:var(--vcs-accent)}
+html[data-vcs-theme="acid-riviera"] .front-headline h1{font:700 clamp(5rem,9vw,10.1rem)/.86 "Barlow Condensed",sans-serif;letter-spacing:.005em}
+html[data-vcs-theme="acid-riviera"] .front-headline h1 em{font-family:"IM Fell English",Georgia,serif;font-weight:400;font-size:.6em;letter-spacing:-.015em}
+html[data-vcs-theme="acid-riviera"] .front-broadsheet{grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(210px,.7fr)}
+html[data-vcs-theme="acid-riviera"] .front-center{grid-column:1/3;grid-row:1;padding:15px 25px 25px 0}
+html[data-vcs-theme="acid-riviera"] .front-side-right{grid-column:3;grid-row:1;padding:15px 0 0 22px}
+html[data-vcs-theme="acid-riviera"] .front-side-left{grid-column:1/-1;grid-row:2;display:grid;grid-template-columns:1fr 1fr;gap:25px;border:0;border-top:3px solid var(--vcs-accent);padding:20px 0}
+html[data-vcs-theme="acid-riviera"] .front-side-left .print-story:first-child{border-right:1px solid #727c70;padding-right:20px}
+html[data-vcs-theme="acid-riviera"] .print-main-photo>a{height:470px}
+html[data-vcs-theme="acid-riviera"] .print-main-photo img,html[data-vcs-theme="acid-riviera"] .print-thumb img{filter:grayscale(1) contrast(1.35)}
+html[data-vcs-theme="acid-riviera"] .front-headline,html[data-vcs-theme="acid-riviera"] .front-broadsheet,html[data-vcs-theme="acid-riviera"] .front-ledger{border-color:#6e766c}
+html[data-vcs-theme="acid-riviera"] .front-topline,html[data-vcs-theme="acid-riviera"] .front-article-line,html[data-vcs-theme="acid-riviera"] .print-story,html[data-vcs-theme="acid-riviera"] .ledger-head,html[data-vcs-theme="acid-riviera"] .ledger-entries a,html[data-vcs-theme="acid-riviera"] .archive-row,html[data-vcs-theme="acid-riviera"] .archive-hero,html[data-vcs-theme="acid-riviera"] .notices-heading{border-color:#6c746a}
+html[data-vcs-theme="acid-riviera"] .print-label,html[data-vcs-theme="acid-riviera"] .print-jump,html[data-vcs-theme="acid-riviera"] .overline{color:var(--vcs-accent)}
+html[data-vcs-theme="acid-riviera"] .print-story h2{font:700 clamp(2rem,3vw,3.3rem)/.94 "Barlow Condensed",sans-serif}
+html[data-vcs-theme="acid-riviera"] .front-lead-copy .lead-text-columns{font-family:"IM Fell English",Georgia,serif}
+html[data-vcs-theme="acid-riviera"] .front .classified-box{background:#181d1a;border:2px solid var(--vcs-accent)}
+html[data-vcs-theme="acid-riviera"] .fine-print-trigger{color:var(--vcs-accent)}
+html[data-vcs-theme="acid-riviera"] .front .subscribe-panel{background:var(--vcs-accent);color:#141615;border:0}
+html[data-vcs-theme="acid-riviera"] .front .subscribe-panel small{color:#272c22}
+html[data-vcs-theme="acid-riviera"] .paper-footer{background:#050808;border-top:1px solid #6a7169}
+html[data-vcs-theme="acid-riviera"] .archive-hero h1 span{color:var(--vcs-accent)}
+html[data-vcs-theme="acid-riviera"] .archive-image img{filter:grayscale(1) contrast(1.35)}
+html[data-vcs-theme="acid-riviera"] .notices-art{background:#293628}
+@media(max-width:850px){html[data-vcs-theme="acid-riviera"] .front-broadsheet{display:flex;flex-direction:column}html[data-vcs-theme="acid-riviera"] .front-center{order:0;padding:15px 0;border:0;border-bottom:1px solid}html[data-vcs-theme="acid-riviera"] .front-side-left{order:1;display:block}html[data-vcs-theme="acid-riviera"] .front-side-right{order:2;padding:15px 0}html[data-vcs-theme="acid-riviera"] .front-side-left .print-story:first-child{border-right:0}}
+@media(max-width:650px){html[data-vcs-theme="acid-riviera"] .masthead-name span{font-size:clamp(3rem,12vw,6rem)}html[data-vcs-theme="acid-riviera"] .masthead-name strong{font-size:clamp(3.6rem,14vw,7rem)}html[data-vcs-theme="acid-riviera"] .front-headline h1{font-size:clamp(3.8rem,12vw,6.5rem)}}

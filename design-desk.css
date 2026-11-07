@@ -9,3 +9,151 @@
 @media(max-width:1180px){.workbench{grid-template-columns:355px 1fr}.controls-body{padding-left:19px;padding-right:19px}.preview-area{padding:17px 15px}.preview-frame iframe{min-height:580px}}
 @media(max-width:850px){.workbench{display:block}.controls{max-height:none;overflow:visible;border-right:0;border-bottom:1px solid #333}.desk-intro h1{font-size:4.5rem}.theme-choices{display:grid;grid-template-columns:repeat(3,1fr)}.theme-card{display:block;text-align:center;padding:10px}.theme-swatch{height:75px;width:100%;margin-bottom:8px}.theme-info strong{font-size:18px}.theme-info small{font-size:11px}.theme-check{display:none}.preview-area{min-height:0}.preview-frame iframe{min-height:770px;height:770px}.preview-footer{flex-wrap:wrap}.controls-body{display:grid;grid-template-columns:1fr 1fr;gap:0 23px}.control-group{min-width:0}.control-group:nth-child(1){grid-column:1/-1}}
 @media(max-width:610px){.desk-top{padding:0 12px}.desk-top-right{display:none}.desk-intro{padding:21px 18px}.desk-intro h1{font-size:3.7rem}.controls-body{display:block;padding:0 16px 25px}.theme-choices{display:flex;flex-direction:column}.theme-card{display:flex;text-align:left}.theme-swatch{width:72px;height:58px;margin:0}.control-grid{gap:9px}.preview-area{padding:15px 9px}.preview-heading{flex-direction:column;align-items:start}.preview-frame iframe{min-height:690px;height:690px}.preview-footer #status{text-align:left}}
+
+/* VICE CITY SINNER / ART DEPARTMENT II
+   Less SaaS dashboard, more forbidden floor of an alternate-universe newspaper. */
+:root{--studio-black:#09070c;--studio-ink:#17111a;--studio-wine:#49263e;--studio-plum:#2c1a2e;--studio-bone:#eee2d3;--studio-muted:#ae9fac;--studio-rose:#c68eae;--studio-line:#55404e;--studio-glimmer:#b8ff2d}
+body{background:var(--studio-black);color:var(--studio-bone);font-family:"DM Sans",Arial,sans-serif;background-image:radial-gradient(ellipse at 0% -20%,#422136 0%,transparent 37%),radial-gradient(ellipse at 100% 100%,#1e1930,transparent 50%)}
+.desk-top{min-height:77px;height:auto;background:#0e0b11;border-bottom:3px double #89627a;padding:8px 30px;position:relative;z-index:5;gap:16px}
+.desk-top::after{content:"";position:absolute;bottom:5px;left:30px;right:30px;border-bottom:1px solid #402c3b;pointer-events:none}
+.desk-top-left{flex:1;min-width:180px}
+.desk-brand{display:flex;align-items:baseline;gap:14px;letter-spacing:0}
+.desk-brand strong{font:800 clamp(1.25rem,2.2vw,2rem)/1 "Newsreader",Georgia,serif;letter-spacing:-.045em}
+.desk-brand small{font:700 11px/1 "Barlow Condensed",sans-serif;letter-spacing:.18em;color:#e2b4c8}
+.desk-top-center{font:italic 15px "IM Fell English",Georgia,serif;color:#d8c5d1;white-space:nowrap}
+.desk-top-right{display:flex;flex-direction:column;text-align:right;font:600 11px "Barlow Condensed",sans-serif;letter-spacing:.14em;color:#b2a3af}
+.desk-top-right strong{font:700 12px "Barlow Condensed",sans-serif;color:var(--studio-glimmer);letter-spacing:.15em}
+.workbench{grid-template-columns:minmax(390px,460px) minmax(0,1fr);min-height:calc(100vh - 77px)}
+.controls{background:linear-gradient(160deg,#1a111d,#100d13 49%,#15101a);max-height:calc(100vh - 77px);border-right:2px solid #503c4b}
+.desk-intro{position:relative;padding:29px 30px 30px;background:radial-gradient(ellipse at 85% -15%,#5c2b4c,transparent 60%),linear-gradient(160deg,#291728,#0e0c13 80%);border-bottom:3px double #97728a;overflow:hidden}
+.desk-intro::before{content:"";width:280px;height:280px;position:absolute;right:-138px;top:-115px;border:1px solid #b5809b38;border-radius:50%;box-shadow:0 0 0 30px #b5809b10,0 0 0 66px #b5809b09;pointer-events:none}
+.desk-intro::after{content:"ART / 02";position:absolute;right:-10px;bottom:26px;transform:rotate(-90deg);font:700 12px "Barlow Condensed",sans-serif;letter-spacing:.25em;color:#8f667f}
+.intro-topline{position:relative;display:flex;justify-content:space-between;border-bottom:1px solid #75586d;padding-bottom:9px;gap:12px;margin-bottom:21px;font:700 11px "Barlow Condensed",sans-serif;letter-spacing:.14em;color:#cba7bc}
+.eyebrow{font:700 11px "Barlow Condensed",sans-serif;letter-spacing:.19em;color:var(--studio-rose)}
+.desk-intro h1{position:relative;font:800 clamp(4rem,5.7vw,6rem)/.86 "Newsreader",Georgia,serif;letter-spacing:-.075em;margin:14px 0 21px;color:#eee2d4}
+.desk-intro h1 em{font:italic 400 .8em "IM Fell English",Georgia,serif;color:#d9a6c4;letter-spacing:-.055em}
+.desk-intro p{font:19px/1.4 "IM Fell English",Georgia,serif;color:#e0d0d6;max-width:360px}
+.intro-ornament{display:flex;align-items:center;gap:14px;position:relative;max-width:340px;border-top:1px solid #69475c;padding-top:16px;margin-top:21px;color:#d7a9be}
+.intro-ornament span{font-size:26px;line-height:1;color:var(--studio-glimmer)}
+.intro-ornament i{font:700 10px/1.4 "Barlow Condensed",sans-serif;letter-spacing:.16em;font-style:normal}
+.controls-body{padding:4px 27px 40px}
+.control-group{padding:23px 0 24px;border-bottom:1px solid #5a4352}
+.control-heading{margin-bottom:16px;gap:5px}
+.control-heading span{font:700 11px/1.2 "Barlow Condensed",sans-serif;letter-spacing:.2em;color:#bc96a9}
+.control-heading h2{font:600 30px/1.05 "Newsreader",Georgia,serif;color:#efe2d7}
+.theme-choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.theme-card{min-width:0;display:flex;flex-direction:column;align-items:stretch;gap:0;padding:0;text-align:left;background:#1e1820;border:1px solid #6c5365;border-radius:0;color:#eadcde;overflow:hidden;position:relative}
+.theme-card:hover{background:#2a1c29;border-color:#cba4b8;transform:translateY(-1px)}
+.theme-card.is-selected{background:#311e31;border-color:#d8a4c0;box-shadow:inset 0 0 0 1px #d8a4c077}
+.theme-card .theme-swatch{width:100%;height:101px;display:flex;align-items:center;justify-content:center;position:relative;border-bottom:1px solid #8c6e82;margin:0;box-shadow:none}
+.theme-card .theme-swatch::before,.theme-card .theme-swatch::after{content:"";display:block;position:absolute;left:16%;right:16%;height:1px;background:currentColor;opacity:.48}
+.theme-card .theme-swatch::before{top:16%}
+.theme-card .theme-swatch::after{bottom:15%}
+.theme-card .swatch-paper-lines{font:700 26px/.92 "Newsreader",Georgia,serif;letter-spacing:-.045em;z-index:1}
+.theme-card .swatch-black .swatch-paper-lines,.theme-card .swatch-acid .swatch-paper-lines{font:700 27px/.83 "Barlow Condensed",sans-serif;letter-spacing:.035em}
+.theme-card .swatch-velvet .swatch-paper-lines{font:600 27px/.92 "Bodoni Moda",serif;font-style:italic}
+.theme-card .swatch-sunday .swatch-paper-lines{font:600 26px/.91 "Newsreader",serif;font-style:italic}
+.theme-card .theme-info{display:flex;flex-direction:column;gap:4px;padding:12px 12px 13px;min-height:69px}
+.theme-card .theme-info strong{font:600 20px "Newsreader",Georgia,serif}
+.theme-card .theme-info small{font:11px/1.3 "DM Sans",sans-serif;color:#baaabb}
+.theme-card .theme-check{position:absolute;right:8px;top:7px;background:#161018;color:var(--studio-glimmer);font-size:15px;width:27px;height:27px;display:grid;place-items:center;border:1px solid #c6a7ba;opacity:0}
+.theme-card.is-selected .theme-check{opacity:1}
+.swatch-paper{background:#e1d9c8;color:#282521}
+.swatch-blue{background:linear-gradient(160deg,#c9d8d3,#75949d);color:#173b45}
+.swatch-black{background:#14171a;color:#f7f1e6}
+.swatch-velvet{background:linear-gradient(120deg,#37182d,#17131b);color:#e8d3dd}
+.swatch-acid{background:#101315;color:#b8ff2d}
+.swatch-sunday{background:#e9d8b5;color:#833f32}
+.theme-footnote{font:italic 14px "IM Fell English",Georgia,serif;color:#bda9bb;margin-top:12px}
+.control-grid{gap:13px;grid-template-columns:1fr 1fr}
+.control-grid label,.draft-name-label,.accent-custom{color:#d3c3ce;font:600 11px/1.35 "DM Sans",sans-serif;gap:6px}
+.control-grid select,.draft-name-label input,.draft-name-label textarea,.preview-page-label select{background:#241d26;color:#f0e3d9;border:1px solid #6c5362;border-radius:0;min-height:41px;padding:9px;font:13px/1.2 "DM Sans",sans-serif;accent-color:var(--studio-rose)}
+.draft-name-label textarea{resize:vertical;min-height:65px;line-height:1.4}
+.control-grid select:hover,.draft-name-label input:hover,.draft-name-label textarea:hover{border-color:#ba92ae}
+.accent-heading{display:block;margin:18px 0 9px;color:#e7d4de;font:700 11px "DM Sans",sans-serif}
+.accent-choices{display:flex;gap:9px;flex-wrap:wrap}
+.accent-choices button{width:34px;height:34px;background:var(--swatch);border:2px solid #1c131d;outline:1px solid #6a5a65;border-radius:50%;cursor:pointer;position:relative}
+.accent-choices button.is-selected::after{content:"✓";position:absolute;right:-5px;bottom:-5px;background:#eddfd7;color:#151019;font:700 12px "DM Sans",sans-serif;width:17px;height:17px;display:grid;place-items:center;border-radius:50%}
+.accent-choices button:hover{transform:scale(1.1);outline-color:#deb8ce}
+.accent-custom{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:13px}
+.accent-custom .color-row{min-height:38px;flex:none;background:#241d26;border-color:#735968}
+.accent-custom .color-row input{height:26px}
+.accent-custom output{color:#e0c7d8}
+.inspiration-actions{display:flex;gap:8px;margin-top:19px}
+.action{background:#281d2a;border:1px solid #82637a;color:#f1e3e5;font:700 12px "Barlow Condensed",sans-serif;letter-spacing:.14em;border-radius:0;padding:12px 14px;min-height:42px}
+.action:hover{background:#3b2b3e;border-color:#dbacc5}
+.action.primary{background:#cd9caf;color:#191018;border-color:#cd9caf}
+.action.primary:hover{background:#efbdd0}
+.action.surprise{background:#b8ff2d;color:#10140c;border-color:#b8ff2d}
+.action.surprise:hover{background:#d1ff85}
+.action.release{background:#d7adc1;color:#201520;border-color:#d7adc1;font-size:14px}
+.action.release:hover{background:#eed0df}
+.action.small{padding:9px 11px;min-height:36px;font-size:11px;white-space:nowrap}
+.action.subtle{background:#191419;border-color:#665463}
+.fine-copy,.mini-note,.empty-drafts{font:12px/1.5 "DM Sans",sans-serif;color:#baabba}
+.draft-item{background:#211822;border:1px solid #634d5e}
+.draft-item strong{font:600 17px "Newsreader",serif}
+.draft-item small{color:#ad9aad}
+.draft-item-actions button{border-color:#725a6d;color:#e9ccde}
+.import-draft{color:#e3b9d0}
+.preview-area{background:radial-gradient(ellipse at 82% 2%,#40243c 0,transparent 45%),radial-gradient(ellipse at 10% 85%,#141626,transparent 50%),#090b0f;padding:24px 26px 14px;min-height:calc(100vh - 77px)}
+.preview-heading{border-bottom:1px solid #655269;margin-bottom:17px;padding-bottom:14px}
+.preview-heading h2{font:600 37px/.98 "Newsreader",Georgia,serif;color:#f4e7e0;letter-spacing:-.045em}
+.preview-heading .eyebrow{color:#d9aec3}
+.preview-actions{gap:9px}
+.preview-page-label{font:700 10px/1.2 "DM Sans",sans-serif;color:#cbb9c5;letter-spacing:.05em;display:flex;flex-direction:column;gap:3px;white-space:nowrap}
+.preview-page-label select{font-size:11px;padding:6px;min-height:35px;max-width:145px}
+.preview-frame{border:9px solid #19101a;outline:1px solid #8b647b;border-radius:0;box-shadow:0 15px 55px #000b,inset 0 0 0 1px #a06e86;min-height:530px}
+.preview-frame iframe{min-height:640px}
+.preview-footer{border-top:1px solid #594559;padding-top:14px;margin-top:13px;color:#bbaabb;font:11px/1.45 "DM Sans",sans-serif}
+.preview-footer #status{color:#c4f285;font:700 11px "Barlow Condensed",sans-serif;letter-spacing:.08em}
+@media(max-width:1250px){
+ .desk-top-center{display:none}
+ .workbench{grid-template-columns:405px 1fr}
+ .controls-body{padding-left:20px;padding-right:20px}
+ .preview-area{padding:18px}
+ .preview-actions .action.small{font-size:10px;padding:8px}
+}
+@media(max-width:850px){
+ .workbench{display:block}
+ .controls{max-height:none;overflow:visible}
+ .desk-top{min-height:69px}
+ .controls-body{display:grid;grid-template-columns:1fr 1fr;gap:0 22px}
+ .control-group:nth-child(1){grid-column:1/-1}
+ .theme-choices{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .theme-card{display:flex;text-align:left;flex-direction:column}
+ .theme-card .theme-swatch{width:100%;height:95px}
+ .theme-card .theme-info{padding:11px;min-height:67px}
+ .preview-area{min-height:0}
+ .preview-frame iframe{min-height:770px}
+}
+@media(max-width:620px){
+ .desk-top{padding:10px 15px}
+ .desk-top-left{min-width:0}
+ .desk-brand strong{font-size:1.4rem}
+ .desk-brand small{font-size:9px}
+ .desk-top-right{font-size:9px}
+ .desk-top-right strong{font-size:10px}
+ .desk-intro{padding:23px 21px}
+ .desk-intro h1{font-size:clamp(3.5rem,16vw,5.6rem)}
+ .desk-intro p{font-size:17px}
+ .controls-body{display:block;padding:0 18px 25px}
+ .theme-choices{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .theme-card{display:flex;flex-direction:column}
+ .theme-card .theme-swatch{height:83px}
+ .theme-card .theme-info strong{font-size:18px}
+ .theme-card .theme-info small{font-size:10px}
+ .theme-card .theme-check{display:grid}
+ .control-grid{grid-template-columns:1fr 1fr;gap:10px}
+ .accent-custom{display:flex;align-items:center}
+ .inspiration-actions{flex-wrap:wrap}
+ .preview-area{padding:18px 9px}
+ .preview-heading{display:block}
+ .preview-heading h2{font-size:32px}
+ .preview-actions{margin-top:13px;display:flex;flex-wrap:wrap}
+ .preview-frame{border-width:5px;min-height:700px}
+ .preview-frame iframe{min-height:700px;height:700px}
+ .preview-footer{display:block}
+ .preview-footer #status{display:block;text-align:left;margin-top:9px}
+}
+@media(prefers-reduced-motion:reduce){.theme-card:hover,.accent-choices button:hover{transform:none}}

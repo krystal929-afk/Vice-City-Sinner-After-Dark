@@ -66,3 +66,107 @@ html[data-vcs-layout="poster"] .front-headline h1{font-size:clamp(4.5rem,8.8vw,9
 .historical-edition h2{font:700 clamp(2rem,4vw,4rem)/1.05 var(--serif);margin:10px 0}
 .historical-edition p{font:20px var(--body);margin:0 0 12px}
 @media(max-width:650px){.edition-explainer{grid-template-columns:1fr;gap:13px}}
+
+/* VCS ART DIRECTION v2: standalone toggles, not a global filter or forced rebrand. */
+
+/* New, genuinely different editorial arrangements */
+html[data-vcs-layout="editorial"] .front-broadsheet{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1.4fr) minmax(230px,.75fr)}
+html[data-vcs-layout="editorial"] .front-center{grid-column:1/3;grid-row:1;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:start;padding:24px 22px 24px 0;border-right:1px solid var(--hair)}
+html[data-vcs-layout="editorial"] .front-center .print-main-photo>a{height:560px}
+html[data-vcs-layout="editorial"] .front-center .lead-text-columns{columns:1}
+html[data-vcs-layout="editorial"] .front-side-right{grid-column:3;grid-row:1;padding:20px 0 0 22px}
+html[data-vcs-layout="editorial"] .front-side-left{grid-column:1/-1;grid-row:2;display:grid;grid-template-columns:1fr 1fr;gap:28px;border-top:2px solid currentColor;border-right:0;padding:24px 0}
+html[data-vcs-layout="editorial"] .front-side-left .print-story:first-child{border-right:1px solid var(--hair);padding-right:25px}
+html[data-vcs-layout="gallery"] .front-broadsheet{display:grid;grid-template-columns:1fr 1fr;gap:0}
+html[data-vcs-layout="gallery"] .front-center{grid-column:1/-1;grid-row:1;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:27px;padding:24px 0;border-bottom:3px double currentColor}
+html[data-vcs-layout="gallery"] .front-center .print-main-photo>a{height:510px}
+html[data-vcs-layout="gallery"] .front-center .lead-text-columns{columns:1;font-size:19px}
+html[data-vcs-layout="gallery"] .front-side-left{grid-column:1;grid-row:2;border-right:1px solid var(--hair);padding:24px 27px 0 0}
+html[data-vcs-layout="gallery"] .front-side-right{grid-column:2;grid-row:2;border-left:0;padding:24px 0 0 27px}
+html[data-vcs-layout="gallery"] .front-side .print-story{display:grid;grid-template-columns:145px 1fr;column-gap:15px}
+html[data-vcs-layout="gallery"] .front-side .print-story .print-label{grid-column:1/-1}
+html[data-vcs-layout="gallery"] .front-side .print-story h2{grid-column:1/-1}
+html[data-vcs-layout="gallery"] .front-side .print-story .print-thumb{grid-column:1;grid-row:3 / 5}
+html[data-vcs-layout="gallery"] .front-side .print-story .print-copy{grid-column:2;grid-row:3}
+html[data-vcs-layout="gallery"] .front-side .print-story .print-jump{grid-column:2}
+html[data-vcs-layout="gallery"] .front-side .print-story:not(:has(.print-thumb)) .print-copy{grid-column:1/-1}
+
+/* Masthead is a separate creative decision from article typography. */
+html[data-vcs-masthead="deco"] .masthead-name{font-family:"Barlow Condensed","Arial Narrow",sans-serif!important;letter-spacing:.04em!important;line-height:.82!important}
+html[data-vcs-masthead="deco"] .masthead-name span{letter-spacing:.06em!important;font-size:clamp(4.5rem,9.4vw,10rem)!important;font-weight:500!important;font-style:normal!important}
+html[data-vcs-masthead="deco"] .masthead-name strong{letter-spacing:.035em!important;font-size:clamp(5.6rem,11.7vw,12.7rem)!important;font-weight:700!important;font-style:normal!important}
+html[data-vcs-masthead="whisper"] .masthead-name{font-family:"Newsreader",Georgia,serif!important;line-height:.92!important}
+html[data-vcs-masthead="whisper"] .masthead-name span{font-size:clamp(3.1rem,6.5vw,7rem)!important;font-style:italic!important;font-weight:400!important;letter-spacing:.015em!important}
+html[data-vcs-masthead="whisper"] .masthead-name strong{font-size:clamp(4.7rem,10vw,11rem)!important;font-weight:500!important;letter-spacing:-.04em!important}
+html[data-vcs-masthead="brutalist"] .masthead-name{font-family:Impact,"Arial Black",sans-serif!important;line-height:.79!important;text-transform:uppercase!important}
+html[data-vcs-masthead="brutalist"] .masthead-name span{font-size:clamp(4.8rem,10.1vw,11rem)!important;letter-spacing:-.005em!important;font-weight:900!important;font-style:normal!important}
+html[data-vcs-masthead="brutalist"] .masthead-name strong{font-size:clamp(6rem,13vw,14rem)!important;letter-spacing:-.015em!important;font-weight:900!important;font-style:normal!important}
+html[data-vcs-masthead="stacked"] .masthead-name{font-family:"Newsreader",Georgia,serif!important;line-height:.94!important}
+html[data-vcs-masthead="stacked"] .masthead-name span{font-size:clamp(3rem,6vw,6.4rem)!important;letter-spacing:.24em!important;font-weight:400!important;font-style:normal!important}
+html[data-vcs-masthead="stacked"] .masthead-name strong{font-size:clamp(5rem,11vw,12rem)!important;letter-spacing:-.06em!important;font-weight:800!important;font-style:normal!important}
+
+/* Type personalities */
+html[data-vcs-headlines="slab"]{--serif:Georgia,"Times New Roman",serif}
+html[data-vcs-headlines="slab"] :is(.front-headline h1,.print-story h2,.archive-copy h3,.dispatch h3,.article-body h2){font-weight:700!important;letter-spacing:-.045em!important}
+html[data-vcs-headlines="italic"]{--serif:"Newsreader",Georgia,serif}
+html[data-vcs-headlines="italic"] :is(.front-headline h1,.print-story h2,.archive-copy h3,.dispatch h3,.article-body h2){font-weight:600!important;font-style:italic!important;letter-spacing:-.03em!important}
+
+/* Readability and density */
+html[data-vcs-copy-size="small"] :is(.print-copy,.lead-text-columns,.article-body){font-size:16px!important;line-height:1.37!important}
+html[data-vcs-copy-size="large"] :is(.print-copy,.lead-text-columns,.article-body){font-size:21px!important;line-height:1.52!important}
+html[data-vcs-copy-size="oversize"] :is(.print-copy,.lead-text-columns,.article-body){font-size:24px!important;line-height:1.56!important}
+html[data-vcs-copy-size="oversize"] .lead-text-columns{columns:1!important}
+
+/* Image finishing never replaces or fabricates original real photography. */
+html[data-vcs-photos="truecolor"] :is(.print-main-photo img,.print-thumb img,.archive-image img,.article-hero-image img,.lead-photo img){filter:none!important}
+html[data-vcs-photos="washed"] :is(.print-main-photo img,.print-thumb img,.archive-image img,.article-hero-image img,.lead-photo img){filter:grayscale(.35) sepia(.2) saturate(.7) contrast(.83)!important}
+html[data-vcs-photos="contrast"] :is(.print-main-photo img,.print-thumb img,.archive-image img,.article-hero-image img,.lead-photo img){filter:grayscale(1) contrast(1.75)!important}
+html[data-vcs-photos="tint"] :is(.print-main-photo img,.print-thumb img,.archive-image img,.article-hero-image img,.lead-photo img){filter:grayscale(1) sepia(.8) hue-rotate(270deg) saturate(.65) contrast(1.15)!important}
+
+/* Paper texture as editorial tactility, independent of light/dark theme */
+html[data-vcs-paper="clean"] .newspaper-wrap::after{opacity:0!important}
+html[data-vcs-paper="weathered"] .newspaper-wrap::after{opacity:.4!important;mix-blend-mode:multiply!important}
+html[data-vcs-paper="folded"] .newspaper-wrap{background-image:linear-gradient(90deg,transparent 49.86%,#7772 50%,transparent 50.14%)!important;background-blend-mode:multiply}
+html[data-vcs-paper="folded"] .newspaper-wrap::after{opacity:.16!important}
+
+/* Visible hierarchy of the actual newspaper's rules */
+html[data-vcs-rules="hairline"] :is(.front-headline,.front-broadsheet,.front-ledger,.archive-hero,.notices-heading){border-bottom:1px solid currentColor!important}
+html[data-vcs-rules="hairline"] :is(.print-story,.ledger-entries a,.archive-row,.front-side){border-color:#8886!important}
+html[data-vcs-rules="heavy"] :is(.front-headline,.front-broadsheet,.front-ledger,.archive-hero,.notices-heading){border-bottom:6px solid currentColor!important}
+html[data-vcs-rules="heavy"] :is(.print-story,.ledger-entries a,.archive-row){border-bottom:3px solid currentColor!important}
+html[data-vcs-rules="dashed"] :is(.front-headline,.front-broadsheet,.front-ledger,.archive-hero,.notices-heading,.ledger-entries a,.archive-row,.print-story){border-bottom-style:dashed!important}
+
+/* Accent ink is expressive, but kept subordinate to editorial content. */
+html .masthead-under .tiny-crest,
+html .print-jump,
+html .ledger-archive,
+html .archive-hero h1 span{color:var(--vcs-accent)}
+html .fine-print-trigger{color:var(--vcs-accent)}
+html[data-vcs-theme="acid-riviera"] .fine-print-trigger,
+html[data-vcs-theme="acid-riviera"] .masthead-under .tiny-crest{color:var(--vcs-accent)}
+
+/* All compositions collapse into readable story order on small screens. */
+@media(max-width:880px){
+ html[data-vcs-layout="editorial"] .front-broadsheet,
+ html[data-vcs-layout="gallery"] .front-broadsheet{display:flex;flex-direction:column}
+ html[data-vcs-layout="editorial"] .front-center,
+ html[data-vcs-layout="gallery"] .front-center{display:block;padding:16px 0;border:0;border-bottom:2px solid;order:0}
+ html[data-vcs-layout="editorial"] .front-side-left,
+ html[data-vcs-layout="gallery"] .front-side-left{display:block;order:1;padding:16px 0;border:0;border-bottom:1px solid}
+ html[data-vcs-layout="editorial"] .front-side-right,
+ html[data-vcs-layout="gallery"] .front-side-right{display:block;order:2;padding:16px 0;border:0}
+ html[data-vcs-layout="gallery"] .front-side .print-story{display:block}
+ html[data-vcs-layout="editorial"] .front-center .print-main-photo>a,
+ html[data-vcs-layout="gallery"] .front-center .print-main-photo>a{height:360px}
+}
+@media(max-width:650px){
+ html[data-vcs-masthead="deco"] .masthead-name span{font-size:clamp(2.8rem,12vw,4.7rem)!important}
+ html[data-vcs-masthead="deco"] .masthead-name strong{font-size:clamp(3.5rem,14vw,5.4rem)!important}
+ html[data-vcs-masthead="whisper"] .masthead-name span{font-size:clamp(2.2rem,9vw,4.1rem)!important}
+ html[data-vcs-masthead="whisper"] .masthead-name strong{font-size:clamp(3.2rem,12vw,5.3rem)!important}
+ html[data-vcs-masthead="brutalist"] .masthead-name span{font-size:clamp(3rem,12vw,5rem)!important}
+ html[data-vcs-masthead="brutalist"] .masthead-name strong{font-size:clamp(3.9rem,15vw,6.2rem)!important}
+ html[data-vcs-masthead="stacked"] .masthead-name span{font-size:clamp(1.9rem,7.5vw,3.5rem)!important}
+ html[data-vcs-masthead="stacked"] .masthead-name strong{font-size:clamp(3.4rem,12vw,5.4rem)!important}
+ html[data-vcs-copy-size="oversize"] :is(.print-copy,.lead-text-columns,.article-body){font-size:21px!important}
+}

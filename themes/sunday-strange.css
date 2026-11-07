@@ -1,0 +1,31 @@
+/* SUNDAY STRANGE / Lovely afternoon, troubling small print. */
+html[data-vcs-theme="sunday-strange"]{--paper:#efe6d3;--paper-light:#faf5e8;--ink:#302d28;--hair:#b1a593;--muted:#766d60;--serif:"Newsreader",Georgia,serif}
+html[data-vcs-theme="sunday-strange"] body{background:#c7b9aa;background-image:linear-gradient(150deg,#726357,#24211f)}
+html[data-vcs-theme="sunday-strange"] .newspaper-wrap{background:#efe6d3;border:2px solid #d2c5af;box-shadow:0 12px 60px #080909a0}
+html[data-vcs-theme="sunday-strange"] .newspaper-wrap::after{opacity:.22}
+html[data-vcs-theme="sunday-strange"] .masthead{padding:25px 0 17px}
+html[data-vcs-theme="sunday-strange"] .masthead-name{font-family:"Newsreader",Georgia,serif;color:#302d28}
+html[data-vcs-theme="sunday-strange"] .masthead-name span{font-size:clamp(4rem,7.4vw,8rem);font-style:italic;letter-spacing:-.04em}
+html[data-vcs-theme="sunday-strange"] .masthead-name strong{font-size:clamp(5rem,10.2vw,11rem);font-weight:700;letter-spacing:-.04em}
+html[data-vcs-theme="sunday-strange"] .masthead-eyebrow{color:#a45544}
+html[data-vcs-theme="sunday-strange"] .masthead-under{border-color:#ba8a79}
+html[data-vcs-theme="sunday-strange"] .issue-strap{border-block:1px solid #a45045;background:#e4d7be;padding:15px 12px}
+html[data-vcs-theme="sunday-strange"] .paper-nav{border-color:#b19485}
+html[data-vcs-theme="sunday-strange"] .paper-nav a:hover{color:var(--vcs-accent)}
+html[data-vcs-theme="sunday-strange"] .front-headline h1{font:700 clamp(3.7rem,6.8vw,7rem)/1 "Newsreader",Georgia,serif;letter-spacing:-.035em}
+html[data-vcs-theme="sunday-strange"] .front-headline h1 em{color:#aa5547;font-weight:400}
+html[data-vcs-theme="sunday-strange"] .front-broadsheet{grid-template-columns:1.15fr 1.9fr 1.15fr}
+html[data-vcs-theme="sunday-strange"] .front-center{padding:15px;background:#e7dbc6}
+html[data-vcs-theme="sunday-strange"] .print-main-photo>a{height:350px}
+html[data-vcs-theme="sunday-strange"] .print-main-photo img{filter:grayscale(.55) sepia(.22) contrast(.94)}
+html[data-vcs-theme="sunday-strange"] .print-thumb img{filter:grayscale(.5) sepia(.25) contrast(.94)}
+html[data-vcs-theme="sunday-strange"] .front .classified-box{border:1px solid #a25145;background:#f8ebd6}
+html[data-vcs-theme="sunday-strange"] .front .subscribe-panel{background:#ccac94;color:#251f1b;border:0}
+html[data-vcs-theme="sunday-strange"] .front .subscribe-panel small{color:#4d4037}
+html[data-vcs-theme="sunday-strange"] .front .subscribe-panel .form-row button{background:#a34b3d;border-color:#a34b3d}
+html[data-vcs-theme="sunday-strange"] .paper-footer{background:#342b28;color:#eaded0}
+html[data-vcs-theme="sunday-strange"] .archive-hero h1 span{color:#ba5a48}
+html[data-vcs-theme="sunday-strange"] .archive-image img{filter:sepia(.3) grayscale(.4)}
+html[data-vcs-theme="sunday-strange"] .notices-art{background:#a75346}
+@media(max-width:850px){html[data-vcs-theme="sunday-strange"] .front-broadsheet{grid-template-columns:1fr 1fr}html[data-vcs-theme="sunday-strange"] .front-center{grid-column:1/-1;grid-row:1}html[data-vcs-theme="sunday-strange"] .front-side-left{grid-column:1;grid-row:2}html[data-vcs-theme="sunday-strange"] .front-side-right{grid-column:2;grid-row:2}}
+@media(max-width:650px){html[data-vcs-theme="sunday-strange"] .front-broadsheet{display:flex;flex-direction:column}html[data-vcs-theme="sunday-strange"] .masthead-name span{font-size:clamp(2.8rem,11vw,5rem)}html[data-vcs-theme="sunday-strange"] .masthead-name strong{font-size:clamp(3.5rem,13vw,6rem)}html[data-vcs-theme="sunday-strange"] .front-headline h1{font-size:clamp(2.8rem,10.5vw,5rem)}}

@@ -2,35 +2,63 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Design Desk | Vice City Sinner</title><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#090b0d">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700;6..72,800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="design-desk.css?v=1"><script src="publication-config.js?v=1"></script><script defer src="design-desk.js?v=1"></script>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700;6..72,800&family=DM+Sans:wght@400;500;600;700&family=IM+Fell+English:ital@0;1&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600;6..96,700;6..96,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="design-desk.css?v=2"><script src="publication-config.js?v=2"></script><script defer src="design-desk.js?v=2"></script>
 </head><body>
-<header class="desk-top"><a class="desk-brand" href="index.html"><span>VCS</span> / THE DESIGN DESK</a><span class="desk-top-right">STAGING WORKSHOP · NOT THE LIVE WEBSITE</span></header>
+<header class="desk-top">
+<div class="desk-top-left"><a class="desk-brand" href="index.html" aria-label="Vice City Sinner front page"><strong>VICE CITY SINNER</strong><small>THE ART DEPARTMENT</small></a></div>
+<span class="desk-top-center">THE JOURNAL OF THINGS SLIGHTLY OUT OF PLACE</span>
+<div class="desk-top-right"><span>PRINTER'S PROOF / NO. 02</span><strong>NOT FOR PUBLICATION</strong></div>
+</header>
 <main class="workbench">
 <section class="controls" aria-label="Design controls">
-<div class="desk-intro"><span class="eyebrow">THE ART DEPARTMENT / ROOM 03</span><h1>CHANGE<br>THE <em>PAPER.</em></h1><p>New season, new personality. Your articles and archives stay exactly where they are.</p></div>
+<div class="desk-intro">
+<div class="intro-topline"><span>INTERNAL PAPER / ART DEPARTMENT</span><span>EST. AFTER DARK</span></div>
+<span class="eyebrow">PROOF ROOM / DESIGN DESK / UNLISTED STAGING</span>
+<h1>MAKE<br>IT <em>STRANGE.</em></h1>
+<p>The newsroom is a blank canvas with a questionable sense of reality. Change everything but the actual reporting.</p>
+<div class="intro-ornament"><span>✦</span><i>WHAT YOU SEE IS NOT NECESSARILY WHAT YOU PRINT.</i></div>
+</div>
 <div class="controls-body">
 <section class="control-group" aria-labelledby="skins-title">
-<div class="control-heading"><span>01 / CHOOSE THE UNIVERSE</span><h2 id="skins-title">Design editions</h2></div>
-<div class="theme-choices" id="theme-choices">
-<button class="theme-card is-selected" type="button" data-theme="other-edition" aria-pressed="true"><span class="theme-swatch swatch-paper"><span class="swatch-paper-lines">VICE CITY<br>SINNER</span></span><span class="theme-info"><strong>The Other Edition</strong><small>Newsprint / uncanny broadsheet</small></span><span class="theme-check" aria-hidden="true">●</span></button>
-<button class="theme-card" type="button" data-theme="blue-hour" aria-pressed="false"><span class="theme-swatch swatch-blue"><span class="swatch-paper-lines">VICE CITY<br>SINNER</span></span><span class="theme-info"><strong>Blue Hour</strong><small>Sea-glass / moonlit gazette</small></span><span class="theme-check" aria-hidden="true">●</span></button>
-<button class="theme-card" type="button" data-theme="black-letter" aria-pressed="false"><span class="theme-swatch swatch-black"><span class="swatch-paper-lines">VICE CITY<br>SINNER</span></span><span class="theme-info"><strong>Black Letter</strong><small>Noir / midnight tabloid</small></span><span class="theme-check" aria-hidden="true">●</span></button>
-</div></section>
-<section class="control-group" aria-labelledby="customize-title"><div class="control-heading"><span>02 / MOVE THE FURNITURE</span><h2 id="customize-title">Layout & typography</h2></div>
+<div class="control-heading"><span>01 / SELECT A REALITY</span><h2 id="skins-title">The wardrobe</h2></div>
+<div class="theme-choices" id="theme-choices" role="group" aria-label="Visual editions"></div>
+<div class="theme-footnote">Six complete art directions. Each changes more than the color of the paper.</div></section>
+<section class="control-group" aria-labelledby="customize-title"><div class="control-heading"><span>02 / CUT & COMPOSITION</span><h2 id="customize-title">The composition</h2></div>
 <div class="control-grid">
-<label>Front-page structure<select id="layout"><option value="broadsheet">Classic broadsheet</option><option value="folio">Two-column folio</option><option value="poster">Poster / tabloid</option></select></label>
+<label>Front-page structure<select id="layout"><option value="broadsheet">Classic broadsheet</option><option value="folio">Two-column folio</option><option value="poster">Poster / tabloid</option><option value="editorial">Editorial split</option><option value="gallery">Photographic feature</option></select></label>
 <label>Story density<select id="density"><option value="classic">Traditional print</option><option value="compact">Extra dense</option><option value="airy">Room to breathe</option></select></label>
-<label>Headline lettering<select id="headlines"><option value="newspaper">Readable newspaper serif</option><option value="deco">Art Deco contrast</option><option value="condensed">Condensed display</option></select></label>
-<label>Accent ink<div class="color-row"><input id="accent" type="color" value="#2b4d58" aria-label="Accent ink color"><output id="accent-label" for="accent">#2B4D58</output></div></label>
+<label>Headline lettering<select id="headlines"><option value="newspaper">Readable newspaper serif</option><option value="deco">Art Deco contrast</option><option value="condensed">Condensed display</option><option value="slab">Old-school sturdy serif</option><option value="italic">Dreamlike italic</option></select></label>
+<label>Masthead personality<select id="masthead"><option value="heritage">Original newspaper</option><option value="deco">Sharp Art Deco</option><option value="whisper">Dreamlike whisper</option><option value="brutalist">Brutalist bold</option><option value="stacked">Classic stacked</option></select></label>
+<label>Photograph finish<select id="photos"><option value="archival">Authentic archive</option><option value="truecolor">Unfiltered color</option><option value="washed">Faded daydream</option><option value="contrast">Crushed black & white</option><option value="tint">Strange color tint</option></select></label>
+<label>Text size<select id="copySize"><option value="small">Compact edition</option><option value="standard">Standard reading</option><option value="large">Large print</option><option value="oversize">Extra large</option></select></label>
 </div></section>
-<section class="control-group" aria-labelledby="vault-title"><div class="control-heading"><span>03 / DO NOT LOSE THE GOOD ONES</span><h2 id="vault-title">Draft cabinet</h2></div>
+<section class="control-group" aria-labelledby="ink-title">
+<div class="control-heading"><span>03 / INK & ATMOSPHERE</span><h2 id="ink-title">The darkroom</h2></div>
+<div class="control-grid">
+<label>Paper character<select id="paper"><option value="newsprint">Classic newsprint</option><option value="clean">Clean & immaculate</option><option value="weathered">Weather-beaten</option><option value="folded">Old fold lines</option></select></label>
+<label>Dividing rules<select id="rules"><option value="classic">Printer's double rule</option><option value="hairline">Thin editorial</option><option value="heavy">Heavy ink</option><option value="dashed">Unsettling dashes</option></select></label>
+</div>
+<label class="accent-heading">Accent ink</label>
+<div class="accent-choices" id="accent-choices" role="group" aria-label="Accent ink swatches">
+<button type="button" data-ink="#2b4d58" style="--swatch:#2b4d58" aria-label="Storm blue ink" title="Storm blue ink"></button>
+<button type="button" data-ink="#a95d77" style="--swatch:#a95d77" aria-label="Bruised orchid ink" title="Bruised orchid ink"></button>
+<button type="button" data-ink="#b8ff2d" style="--swatch:#b8ff2d" aria-label="Acid green ink" title="Acid green ink"></button>
+<button type="button" data-ink="#b84c39" style="--swatch:#b84c39" aria-label="Vermilion ink" title="Vermilion ink"></button>
+<button type="button" data-ink="#4f8492" style="--swatch:#4f8492" aria-label="Sea-glass ink" title="Sea-glass ink"></button>
+<button type="button" data-ink="#d3b395" style="--swatch:#d3b395" aria-label="Bone-gold ink" title="Bone-gold ink"></button>
+</div>
+<label class="accent-custom">Or choose your own devilish color <div class="color-row"><input id="accent" type="color" value="#2b4d58" aria-label="Custom accent ink"><output id="accent-label" for="accent">#2B4D58</output></div></label>
+<div class="inspiration-actions"><button class="action primary surprise" type="button" id="surprise">SURPRISE ME ✦</button><button class="action subtle" type="button" id="reset-design">Restore this edition</button></div>
+</section>
+<section class="control-group" aria-labelledby="vault-title"><div class="control-heading"><span>04 / KEEP THE ONES THAT GET UNDER YOUR SKIN</span><h2 id="vault-title">The proof drawer</h2></div>
 <label class="draft-name-label">Give this design a name<input id="draft-name" type="text" maxlength="64" placeholder="E.g. October after midnight"></label>
+<label class="draft-name-label">Art director’s notes<textarea id="art-notes" rows="2" maxlength="600" placeholder="What makes this one strange?"></textarea></label>
 <div class="action-row"><button class="action primary" id="save-draft" type="button">Save draft locally</button><button class="action" id="export-draft" type="button">Download design pack</button></div>
 <div class="draft-list" id="draft-list" aria-live="polite"><p class="empty-drafts">No saved designs in this browser yet.</p></div>
 <label class="import-draft">Import an earlier design pack<input id="import-pack" type="file" accept=".json,application/json"></label>
 </section>
-<section class="control-group" aria-labelledby="release-title"><div class="control-heading"><span>04 / WHEN YOU ACTUALLY LOVE IT</span><h2 id="release-title">Make it the new edition</h2></div>
+<section class="control-group" aria-labelledby="release-title"><div class="control-heading"><span>05 / SEND IT TO THE PRESSES</span><h2 id="release-title">Release room</h2></div>
 <p class="fine-copy">Previewing and saving here never publishes a new site design. For a permanent change across every visitor's browser, export the publishing file and update the staging repository, or send the saved pack to Corvus.</p>
 <button class="action release" id="export-publish" type="button">Download publishing file</button>
 <div class="action-row"><button class="action" id="use-local" type="button">Use on my device</button><button class="action subtle" id="reset-local" type="button">Reset my device</button></div>
@@ -38,8 +66,8 @@
 </section>
 </div></section>
 <section class="preview-area" aria-label="Live publication preview">
-<div class="preview-heading"><div><span class="eyebrow">LIVE DESIGN PREVIEW / BROWSER ONLY</span><h2 id="preview-title">The Other Edition</h2></div><div class="preview-actions"><button class="action small" id="open-preview" type="button">Open full size ↗</button><a class="action small" href="index.html">Current publication ↗</a><a class="action small" href="editions.html">Issue cabinet ↗</a></div></div>
+<div class="preview-heading"><div><span class="eyebrow">THE PROOFING GLASS / A WORKING NEWSPAPER</span><h2 id="preview-title">The Other Edition</h2></div><div class="preview-actions"><label class="preview-page-label">Preview page <select id="preview-page"><option value="index.html">Front page</option><option value="archive.html">The archive</option><option value="notices.html">The notices</option><option value="hoochie-daddy.html">A feature article</option></select></label><button class="action small" id="open-preview" type="button">Open full size ↗</button><a class="action small" href="index.html">Current publication ↗</a><a class="action small" href="editions.html">Issue cabinet ↗</a></div></div>
 <div class="preview-frame"><iframe id="site-preview" title="Interactive Vice City Sinner publication preview" src="index.html?vcs_preview=1&vcs_theme=other-edition" loading="eager"></iframe></div>
-<div class="preview-footer"><span>Preview inside the newspaper. Click stories and browse the archive to see the style follow you.</span><span id="status" role="status" aria-live="polite">Ready to experiment.</span></div>
+<div class="preview-footer"><span>Clickable proof: visit articles and archives without releasing a single change.</span><span id="status" role="status" aria-live="polite">NO PLATES HAVE BEEN PRINTED.</span></div>
 </section>
 </main></body></html>

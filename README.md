@@ -5,7 +5,7 @@ The production site at vicecitysinner.com and its repository are untouched.
 
 ## Design Desk
 
-Open design-desk.html. Choose a visual edition, change layout, density, headline font and accent ink. The live, clickable preview carries your chosen look into stories and the archive.
+Open design-desk.html. Choose from six visual editions, five layouts, five mastheads, photo processing, print texture, rule styles, text size, headline font and custom accent ink. The Surprise Me control creates a fresh editable combination, and the preview now supports front page, archives, notices or a feature article. The live, clickable preview carries your chosen look into stories and the archive.
 
 Save draft locally stores named drafts only in this browser. Download design pack exports a portable JSON backup. Import design pack reads a saved JSON file. Use on my device applies the design locally across newspaper pages, without changing anyone else's default. Reset my device restores the published default.
 
@@ -41,4 +41,16 @@ Fictional classifieds, unusual notices and recurring narrative clues are intenti
 
 ## Status
 
-The Other Edition remains the site-wide published STAGING default. Blue Hour and Black Letter are optional experiments. There is no hard-coded four-month schedule. No unapproved edition is listed as published, and nothing here changes the live site.
+The Other Edition remains the site-wide STAGING default. Blue Hour, Black Letter, Velvet Vice, Acid Riviera, and Sunday Strange are optional experiments. There is no hard-coded four-month schedule. No unapproved edition is listed as published, and nothing here changes the live site.
+
+
+## Art Department II (expanded)
+
+Six visual editions: The Other Edition, Blue Hour, Black Letter, Velvet Vice, Acid Riviera and Sunday Strange.
+
+Five front-page structures: broadsheet, folio, poster/tabloid, editorial split and photographic feature.
+Other live controls: density, five headline types, five masthead styles, five photo finishes, four paper textures, four rule treatments, four reading sizes, and custom or preset accent ink.
+
+The Surprise Me control generates a new combination in the preview only; it does not modify the published site.
+The proof drawer preserves a design's name, optional art-director notes and all its settings in a downloadable v2 JSON design pack.
+Existing v1 saved packs continue to load with the new settings defaulted.

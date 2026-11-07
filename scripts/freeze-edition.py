@@ -23,12 +23,13 @@ ROOT=Path(__file__).resolve().parents[1]
 PAGES=["index.html","archive.html","notices.html","foxhole.html","hoochie-daddy.html",
        "hair-metal.html","real-name.html","dungeon.html","about.html","links.html",
        "subscribed.html","404.html"]
-ALLOWED_THEMES={"other-edition","blue-hour","black-letter"}
-ALLOWED_LAYOUTS={"broadsheet","folio","poster"}
+ALLOWED_THEMES={"other-edition","blue-hour","black-letter","velvet-vice","acid-riviera","sunday-strange"}
+ALLOWED_LAYOUTS={"broadsheet","folio","poster","editorial","gallery"}
 ALLOWED_DENSITIES={"classic","compact","airy"}
-ALLOWED_HEADLINES={"newspaper","deco","condensed"}
+ALLOWED_HEADLINES={"newspaper","deco","condensed","slab","italic"}
 DEFAULT={"theme":"other-edition","layout":"broadsheet","density":"classic",
-         "headlines":"newspaper","accent":"#2b4d58"}
+         "headlines":"newspaper","accent":"#2b4d58",
+         "masthead":"heritage","photos":"archival","paper":"newsprint","rules":"classic","copySize":"standard"}
 
 
 def main():
@@ -55,13 +56,20 @@ def main():
     if design["density"] not in ALLOWED_DENSITIES:a.error("Unsupported density.")
     if design["headlines"] not in ALLOWED_HEADLINES:a.error("Unsupported headline font.")
     if not re.fullmatch(r"#[0-9a-fA-F]{6}",str(design["accent"])):a.error("Accent must be a 6-digit hex color.")
+    allowed_extra={"masthead":{"heritage","deco","whisper","brutalist","stacked"},
+      "photos":{"archival","truecolor","washed","contrast","tint"},
+      "paper":{"newsprint","clean","weathered","folded"},
+      "rules":{"classic","hairline","heavy","dashed"},
+      "copySize":{"small","standard","large","oversize"}}
+    for key,allowed in allowed_extra.items():
+        if design.get(key) not in allowed:a.error("Unsupported "+key+" setting.")
 
     target=ROOT/"editions"/args.slug
     if target.exists():a.error("Edition already exists. Frozen editions cannot be overwritten.")
     stylesheet=ROOT/"themes"/(design["theme"]+".css")
     if not stylesheet.exists():a.error("Theme CSS not found.")
-    marker='<script src="publication-config.js?v=1"></script><script src="edition-engine.js?v=1"></script><link rel="stylesheet" href="edition-controls.css?v=1">'
-    frozen_styles='<link rel="stylesheet" href="themes/'+design["theme"]+'.css"><link rel="stylesheet" href="edition-controls.css?v=1">'
+    marker='<script src="publication-config.js?v=2"></script><script src="edition-engine.js?v=2"></script><link rel="stylesheet" href="edition-controls.css?v=2">'
+    frozen_styles='<link rel="stylesheet" href="themes/'+design["theme"]+'.css"><link rel="stylesheet" href="edition-controls.css?v=2">'
     target.mkdir(parents=True)
     try:
         for page in PAGES:
@@ -70,7 +78,7 @@ def main():
             source=source.replace(marker,frozen_styles,1)
             # Edition cabinet lives at the publication root, outside this frozen copy.
             source=source.replace('href="editions.html"','href="../../editions.html"')
-            attrs=' '.join('data-vcs-'+html.escape(k,quote=True)+'="'+html.escape(str(v),quote=True)+'"' for k,v in design.items() if k!="accent")
+            attrs=' '.join('data-vcs-'+re.sub(r"(?<!^)(?=[A-Z])","-",k).lower()+'="'+html.escape(str(v),quote=True)+'"' for k,v in design.items() if k!="accent")
             source=source.replace("<html lang=\"en\">",'<html lang="en" '+attrs+' style="--vcs-accent:'+design["accent"]+'">',1)
             (target/page).write_text(source,encoding="utf-8")
         shutil.copy2(ROOT/"newspaper.css",target/"newspaper.css")

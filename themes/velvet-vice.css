@@ -1,0 +1,37 @@
+/* VELVET VICE / The salon edition. Black plum, old society money, and the odd satin edge. */
+html[data-vcs-theme="velvet-vice"]{--paper:#211924;--paper-light:#2a202d;--ink:#eae0e1;--hair:#625361;--muted:#d0c3c8;--serif:"Bodoni Moda",Georgia,serif}
+html[data-vcs-theme="velvet-vice"] body{background:radial-gradient(ellipse at 22% 0,#48283d,#0d0a0e 62%);color:var(--ink)}
+html[data-vcs-theme="velvet-vice"] .newspaper-wrap{background:#211924;border:1px solid #544052;box-shadow:0 20px 120px #070407}
+html[data-vcs-theme="velvet-vice"] .masthead{padding:29px 0 18px}
+html[data-vcs-theme="velvet-vice"] .masthead-name{font-family:"Bodoni Moda",Georgia,serif;color:#ede3e4}
+html[data-vcs-theme="velvet-vice"] .masthead-name span{font-weight:600;letter-spacing:.01em;font-style:italic;font-size:clamp(4rem,8.5vw,9rem)}
+html[data-vcs-theme="velvet-vice"] .masthead-name strong{font-weight:700;letter-spacing:-.075em;font-size:clamp(5rem,11.5vw,12.5rem)}
+html[data-vcs-theme="velvet-vice"] .masthead-eyebrow{color:#d4b3bf}
+html[data-vcs-theme="velvet-vice"] .masthead-under{border-color:#897585;color:#d9c7ce}
+html[data-vcs-theme="velvet-vice"] .imprint-strip,html[data-vcs-theme="velvet-vice"] .issue-strap,html[data-vcs-theme="velvet-vice"] .paper-nav,
+html[data-vcs-theme="velvet-vice"] .desk-heading,html[data-vcs-theme="velvet-vice"] .front-topline,html[data-vcs-theme="velvet-vice"] .front-headline,html[data-vcs-theme="velvet-vice"] .front-broadsheet,html[data-vcs-theme="velvet-vice"] .front-center,html[data-vcs-theme="velvet-vice"] .front-side,html[data-vcs-theme="velvet-vice"] .print-story,html[data-vcs-theme="velvet-vice"] .front-ledger,html[data-vcs-theme="velvet-vice"] .ledger-head,html[data-vcs-theme="velvet-vice"] .ledger-entries a,html[data-vcs-theme="velvet-vice"] .archive-row,html[data-vcs-theme="velvet-vice"] .archive-hero,html[data-vcs-theme="velvet-vice"] .notices-heading,html[data-vcs-theme="velvet-vice"] .notice-ad{border-color:#806b7e}
+html[data-vcs-theme="velvet-vice"] .issue-strap{border-block:1px solid #876677;background:#321e32;padding:14px}
+html[data-vcs-theme="velvet-vice"] .paper-nav a:hover,html[data-vcs-theme="velvet-vice"] .print-jump:hover{color:var(--vcs-accent)}
+html[data-vcs-theme="velvet-vice"] .front-headline h1{font:700 clamp(3.6rem,6.6vw,7rem)/1.02 "Bodoni Moda",Georgia,serif;letter-spacing:-.045em}
+html[data-vcs-theme="velvet-vice"] .front-headline h1 em{color:#cda6b4;font-weight:400}
+html[data-vcs-theme="velvet-vice"] .front-broadsheet{grid-template-columns:minmax(0,1fr) minmax(350px,2fr) minmax(0,1fr)}
+html[data-vcs-theme="velvet-vice"] .front-center{padding:26px;background:#291e29}
+html[data-vcs-theme="velvet-vice"] .print-main-photo>a{height:430px}
+html[data-vcs-theme="velvet-vice"] .print-main-photo img{filter:grayscale(.8) sepia(.17) contrast(1.1)}
+html[data-vcs-theme="velvet-vice"] .print-thumb img,html[data-vcs-theme="velvet-vice"] .archive-image img{filter:grayscale(.7) sepia(.25)}
+html[data-vcs-theme="velvet-vice"] .front-lead-copy{border-color:#876677}
+html[data-vcs-theme="velvet-vice"] .front-subline p,html[data-vcs-theme="velvet-vice"] .print-label,html[data-vcs-theme="velvet-vice"] .overline{color:#d9bdc6}
+html[data-vcs-theme="velvet-vice"] .front .classified-box{border:1px solid #937585;background:#2c212e}
+html[data-vcs-theme="velvet-vice"] .classified-label,html[data-vcs-theme="velvet-vice"] .fine-print{border-color:#806b7e}
+html[data-vcs-theme="velvet-vice"] .fine-print-trigger{color:#e6c6d4}
+html[data-vcs-theme="velvet-vice"] .front .subscribe-panel{background:#e9dce0;color:#21171e;border:0}
+html[data-vcs-theme="velvet-vice"] .front .subscribe-panel small{color:#55434a}
+html[data-vcs-theme="velvet-vice"] .front .subscribe-panel .form-row button{background:#5c3047;border-color:#5c3047}
+html[data-vcs-theme="velvet-vice"] .paper-footer{background:#120f14;border-top:1px solid #725266}
+html[data-vcs-theme="velvet-vice"] .archive-hero h1 span{color:#c98ca6}
+html[data-vcs-theme="velvet-vice"] .archive-index{color:#ae98a5}
+html[data-vcs-theme="velvet-vice"] .notice-ad .ad-line,html[data-vcs-theme="velvet-vice"] .archive-sort{border-color:#806b7e}
+html[data-vcs-theme="velvet-vice"] .notices-art{background:#412539}
+html[data-vcs-theme="velvet-vice"] .article-body blockquote{background:#332737;color:#eae0e1}
+@media(max-width:850px){html[data-vcs-theme="velvet-vice"] .front-broadsheet{grid-template-columns:1fr 1fr}html[data-vcs-theme="velvet-vice"] .front-center{grid-column:1/-1;grid-row:1}html[data-vcs-theme="velvet-vice"] .front-side-left{grid-column:1;grid-row:2}html[data-vcs-theme="velvet-vice"] .front-side-right{grid-column:2;grid-row:2}}
+@media(max-width:650px){html[data-vcs-theme="velvet-vice"] .front-broadsheet{display:flex;flex-direction:column}html[data-vcs-theme="velvet-vice"] .front-center{padding:17px 12px}html[data-vcs-theme="velvet-vice"] .masthead-name span{font-size:clamp(2.9rem,11vw,5.4rem)}html[data-vcs-theme="velvet-vice"] .masthead-name strong{font-size:clamp(3.4rem,13vw,5.8rem)}html[data-vcs-theme="velvet-vice"] .front-headline h1{font-size:clamp(2.8rem,11vw,5rem)}}

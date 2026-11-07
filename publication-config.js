@@ -7,7 +7,7 @@ window.VCS_PUBLICATION = {
   version: 1,
   title: "Vice City Sinner",
   defaultTheme: "other-edition",
-  defaultSettings: {layout:"broadsheet",density:"classic",headlines:"newspaper",accent:"#2b4d58"},
+  defaultSettings: {layout:"broadsheet",density:"classic",headlines:"newspaper",accent:"#2b4d58",masthead:"heritage",photos:"archival",paper:"newsprint",rules:"classic",copySize:"standard"},
   themes: {
     "other-edition": {
       label:"The Other Edition",
@@ -29,6 +29,27 @@ window.VCS_PUBLICATION = {
       css:"themes/black-letter.css",
       defaultAccent:"#cd8c73",
       mode:"noir"
+    },
+    "velvet-vice": {
+      label:"Velvet Vice",
+      description:"Plum-black couture, bone lettering, indulgent editorial grandeur.",
+      css:"themes/velvet-vice.css",
+      defaultAccent:"#a95d77",
+      mode:"velvet"
+    },
+    "acid-riviera": {
+      label:"Acid Riviera",
+      description:"An ink-black South Florida tabloid with tiny flashes of outrageous color.",
+      css:"themes/acid-riviera.css",
+      defaultAccent:"#b8ff2d",
+      mode:"acid"
+    },
+    "sunday-strange": {
+      label:"Sunday Strange",
+      description:"Sun-faded broadsheet, black coffee, red ink, and distinctly uneasy sunshine.",
+      css:"themes/sunday-strange.css",
+      defaultAccent:"#b84c39",
+      mode:"sunday"
     }
   },
   /* Design proofs only. Do not list unissued designs as published editorial editions. */

@@ -68,6 +68,8 @@ def main():
             source=(ROOT/page).read_text(encoding="utf-8")
             if marker not in source:raise RuntimeError("Expected edition engine not found in "+page)
             source=source.replace(marker,frozen_styles,1)
+            # Edition cabinet lives at the publication root, outside this frozen copy.
+            source=source.replace('href="editions.html"','href="../../editions.html"')
             attrs=' '.join('data-vcs-'+html.escape(k,quote=True)+'="'+html.escape(str(v),quote=True)+'"' for k,v in design.items() if k!="accent")
             source=source.replace("<html lang=\"en\">",'<html lang="en" '+attrs+' style="--vcs-accent:'+design["accent"]+'">',1)
             (target/page).write_text(source,encoding="utf-8")

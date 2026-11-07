@@ -4,7 +4,7 @@
 :root{
   --ink:#181817;--paper:#e9e6dd;--paper-light:#f6f3eb;--hair:#a7a296;
   --dark:#080909;--muted:#605d57;--blue:#263e4a;
-  --serif:"Bodoni Moda",Didot,"Times New Roman",serif;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;--masthead:"Bodoni Moda",Didot,"Times New Roman",serif;
   --body:"IM Fell English",Georgia,serif;
   --sans:"Barlow Condensed","Arial Narrow",sans-serif;
   --ui:"DM Sans",Arial,sans-serif;
@@ -25,7 +25,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid #586b
 .imprint-mid{font-style:italic}
 .masthead{text-align:center;position:relative;padding:16px 0 6px}
 .masthead-eyebrow{margin:0;font:italic 15px var(--body);letter-spacing:.09em;color:#4c4944}
-.masthead-name{margin:5px auto 3px;display:block;text-align:center;line-height:.85;color:#131414;letter-spacing:-.075em;text-transform:uppercase;font-family:var(--serif);font-weight:900}
+.masthead-name{margin:5px auto 3px;display:block;text-align:center;line-height:.85;color:#131414;letter-spacing:-.075em;text-transform:uppercase;font-family:var(--masthead);font-weight:900}
 .masthead-name span{display:block;font-size:clamp(4.7rem,9.9vw,10.3rem);white-space:nowrap;transform:scaleX(.98);font-weight:800}
 .masthead-name strong{display:block;font-size:clamp(5.3rem,11.5vw,12rem);font-weight:900;letter-spacing:-.11em;white-space:nowrap}
 .masthead-name:hover{color:#121d22}
@@ -265,3 +265,10 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid #586b
  .auxiliary-inner .about-head{grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Revision 02: more readable newsroom headlines. Retain the masthead's original display identity. */
+.edition-intro h1{font-size:clamp(3rem,5.1vw,5.7rem);letter-spacing:-.025em;line-height:1.045;font-weight:700}
+.edition-intro h1 em{letter-spacing:-.025em}
+.right-column h2,.right-column h3,.dispatch h3,.section-rule-heading h2,.notice h3,.classified-box h2,.archive-hero h1,.archive-copy h3,.notices-heading h1,.notice-ad h2,.editors-note h2,.archive-story h1,.article-body h2,.article-body h3,.subscribe-panel h2{letter-spacing:-.025em;line-height:1.11}
+.right-column h2,.right-column h3,.notice h3,.dispatch h3,.archive-copy h3{font-weight:700}
+@media(max-width:760px){.edition-intro h1{font-size:clamp(2.9rem,10.7vw,5.1rem);line-height:1.04}}

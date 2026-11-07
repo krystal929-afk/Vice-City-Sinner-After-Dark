@@ -1,31 +1,24 @@
-# The Vice City Sinner — After Dark Edition
+# Vice City Sinner: The Other Edition
 
-An independent, **unpublished redesign preview** of [The Vice City Sinner](https://vicecitysinner.com/).
+Independent staging prototype for the alternate-reality underground newspaper concept.
 
-This repository is intentionally separate from the live publication. The original remains untouched.
+**Preview only.** The real publication at vicecitysinner.com remains unaffected, and this repository has no custom domain.
 
-## Design direction
-**Vice City After Dark:** near-black, midnight blue, deep peacock, orchid, restrained muted magenta and champagne. The actual VCS masthead lettering is preserved in a less-bright version without the original author signature. No decorative filigree added.
+## What this version is
+A serious-looking South Florida newspaper from an almost-familiar reality: rich newsprint, sophisticated typography, authentic editorial articles, dreamlike paper atmosphere, and small intentional uncanny discoveries.
 
-The site uses flexible, art-directed editorial layouts. Original published text and photography are preserved, including the original Mr. Satan / George photos in the Hoochie Daddy feature. No synthetic documentary people were introduced.
+- \`index.html\` — responsive front page, genuine published articles, fictional classified teaser, and functional signup form.
+- \`archive.html\` — all five published stories organized by original publication date.
+- \`notices.html\` — clearly fictional classifieds, corrections, and lore plus an editor's note distinguishing fiction from reporting.
+- Existing story pages — text and photography preserved from the published site, including Mr. Satan's feature photographs.
+- \`newspaper.css\` — integrated responsive newspaper visual system.
+- \`newspaper.js\` — accessible reveal of deliberately strange classified details and a subtle crest interaction.
 
-## Pages
-- `index.html` — magazine-style front page, published features, affiliate links, working newsletter signup
-- `foxhole.html` — Out of the Foxhole and Into Real Life
-- `hoochie-daddy.html` — The Hoochie Daddy Has Historical Precedent
-- `hair-metal.html` — I’m Bringing Back Hair Metal Fashion. Sorry Not Sorry.
-- `real-name.html` — Wait, What’s Your Real Name?
-- `dungeon.html` — Who the Fuck Invented the Dungeon?
-- `about.html` — About
-- `links.html` — Links
-- `subscribed.html`, `404.html` — utility pages
+## Editorial separation
+Actual article contents, history, names, and interviews are not fictionalized. Newspaper-world notices, deliberate anomalies, and marginalia are imaginary and labeled in the editor's note. Avoid fabricated portraits presented as real reporting.
 
 ## Publishing
-Plain HTML + CSS. No build, paid service, or JavaScript framework required. Deploy with GitHub Pages from **main / root**, or open `index.html` locally.
+Static HTML/CSS/JS, GitHub Pages from main. The original site, repositories, DNS, and production services are untouched. External signup form retains the original site's existing EmailOctopus endpoint and sends real submissions.
 
-Only material already published on the original public site is included. Unapproved drafts remain unpublished.
-
-The newsletter still uses the publication's existing EmailOctopus form and affiliate links remain unchanged. If testing signup on the preview, submissions are real.
-
-## Visual credits
-Original publication's published photography and art. All article copy retained. Design refactor and masthead cleanup prepared for private review. All assets are stored locally in `assets/`.
+## Status
+Staging design draft, awaiting creative approval. No new unapproved November articles were fabricated or published.

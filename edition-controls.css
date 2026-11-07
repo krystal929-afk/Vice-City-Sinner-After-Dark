@@ -1,0 +1,68 @@
+/* Design controls shared by all publications. Never changes article content. */
+html[data-vcs-headlines="deco"]{
+ --serif:"Bodoni Moda",Didot,Georgia,serif;
+}
+html[data-vcs-headlines="condensed"]{
+ --serif:"Barlow Condensed","Arial Narrow",sans-serif;
+}
+html[data-vcs-headlines="condensed"] .front-headline h1,
+html[data-vcs-headlines="condensed"] .archive-hero h1,
+html[data-vcs-headlines="condensed"] .notices-heading h1{
+ font-weight:700;letter-spacing:.005em;line-height:.9;
+}
+html[data-vcs-density="compact"] .front-broadsheet{gap:0}
+html[data-vcs-density="compact"] .front-center{padding-left:12px;padding-right:12px}
+html[data-vcs-density="compact"] .front-side-left{padding-right:10px}
+html[data-vcs-density="compact"] .front-side-right{padding-left:10px}
+html[data-vcs-density="compact"] .print-copy{font-size:15px;line-height:1.31}
+html[data-vcs-density="compact"] .front-lead-copy .lead-text-columns{font-size:16px;line-height:1.31}
+html[data-vcs-density="compact"] .print-story{margin-bottom:9px;padding-bottom:9px}
+html[data-vcs-density="compact"] .front .subscribe-panel{margin-top:12px}
+html[data-vcs-density="airy"] .front-center{padding-left:36px;padding-right:36px}
+html[data-vcs-density="airy"] .front-broadsheet{padding-top:33px}
+html[data-vcs-density="airy"] .print-story{padding-bottom:30px;margin-bottom:30px}
+html[data-vcs-density="airy"] .print-copy{line-height:1.65}
+html[data-vcs-density="airy"] .front-lead-copy .lead-text-columns{line-height:1.67}
+html[data-vcs-density="airy"] .front .subscribe-panel{margin-top:52px}
+html[data-vcs-layout="folio"] .front-broadsheet{grid-template-columns:1fr 1fr}
+html[data-vcs-layout="folio"] .front-center{grid-column:1/-1;grid-row:1;display:grid;grid-template-columns:1fr 1fr;gap:20px;border-bottom:2px solid currentColor;padding:20px 0}
+html[data-vcs-layout="folio"] .front-center .print-main-photo>a{height:500px}
+html[data-vcs-layout="folio"] .front-side-left{grid-row:2;grid-column:1;border:0;border-right:1px solid;padding:22px 20px 0 0}
+html[data-vcs-layout="folio"] .front-side-right{grid-row:2;grid-column:2;border:0;padding:22px 0 0 20px}
+html[data-vcs-layout="poster"] .front-broadsheet{grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(210px,.8fr)}
+html[data-vcs-layout="poster"] .front-center{grid-column:1/3;grid-row:1;padding:19px 25px 28px 0}
+html[data-vcs-layout="poster"] .front-side-right{grid-column:3;grid-row:1;padding:19px 0 10px 20px}
+html[data-vcs-layout="poster"] .front-side-left{grid-column:1/-1;grid-row:2;display:grid;grid-template-columns:1fr 1fr;gap:30px;padding:20px 0 0;border:0;border-top:2px solid}
+html[data-vcs-layout="poster"] .front-side-left .print-story{padding-right:20px}
+html[data-vcs-layout="poster"] .front-side-left .print-story:first-child{border-right:1px solid}
+html[data-vcs-layout="poster"] .front-headline h1{font-size:clamp(4.5rem,8.8vw,9.5rem)}
+@media(max-width:850px){
+ html[data-vcs-layout="poster"] .front-broadsheet,
+ html[data-vcs-layout="folio"] .front-broadsheet{display:flex;flex-direction:column}
+ html[data-vcs-layout="poster"] .front-center,
+ html[data-vcs-layout="folio"] .front-center{display:block;padding:16px 0;border:0;border-bottom:2px solid}
+ html[data-vcs-layout="poster"] .front-side-left,
+ html[data-vcs-layout="folio"] .front-side-left,
+ html[data-vcs-layout="poster"] .front-side-right,
+ html[data-vcs-layout="folio"] .front-side-right{display:block;padding:15px 0;border:0;border-bottom:1px solid}
+ html[data-vcs-layout="poster"] .front-side-left .print-story{border:0}
+ html[data-vcs-layout="poster"] .front-side-left .print-story:first-child{border-right:0;border-bottom:1px solid}
+ html[data-vcs-layout="folio"] .front-center .print-main-photo>a{height:360px}
+ html[data-vcs-density="airy"] .front-center{padding-left:0;padding-right:0}
+}
+@media(max-width:650px){
+ html[data-vcs-density="compact"] .print-copy{font-size:17px}
+ html[data-vcs-layout="poster"] .front-headline h1{font-size:clamp(2.9rem,12vw,5rem)}
+}
+
+/* Historical edition register, without fabricating an unissued issue. */
+.archive-editions{padding-bottom:80px}
+.archive-editions .archive-hero em{font-style:italic;font-weight:500}
+.edition-explainer{display:grid;grid-template-columns:1.5fr 1fr;gap:35px;border-bottom:2px solid;padding:16px 0 20px}
+.edition-explainer p{font:19px/1.45 var(--body);margin:0}
+.edition-explainer a{text-decoration:underline}
+.historical-list{padding:34px 0;font:italic 21px var(--body)}
+.historical-edition{display:block;padding:26px 0;border-bottom:1px solid #868077}
+.historical-edition h2{font:700 clamp(2rem,4vw,4rem)/1.05 var(--serif);margin:10px 0}
+.historical-edition p{font:20px var(--body);margin:0 0 12px}
+@media(max-width:650px){.edition-explainer{grid-template-columns:1fr;gap:13px}}

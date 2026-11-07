@@ -1,0 +1,95 @@
+/* BLACK LETTER / midnight press
+   A separate CSS edition, not a recolor filter. */
+html[data-vcs-theme="black-letter"]{
+ --paper:#171a1b;--paper-light:#23282a;--ink:#e8e3d9;--hair:#5c6060;--muted:#b1aca2;
+ --serif:"Newsreader",Georgia,serif;--body:"IM Fell English",Georgia,serif;
+}
+html[data-vcs-theme="black-letter"] body{background:#030303;background-image:linear-gradient(140deg,#120b0e,#030303 60%,#121817)}
+html[data-vcs-theme="black-letter"] .newspaper-wrap{background:#171a1b;box-shadow:0 12px 100px #000d;border:1px solid #49494a}
+html[data-vcs-theme="black-letter"] .newspaper-wrap::after{opacity:.045;mix-blend-mode:screen}
+html[data-vcs-theme="black-letter"] .masthead{padding:23px 0}
+html[data-vcs-theme="black-letter"] .masthead-name{font-family:"Barlow Condensed","Arial Narrow",sans-serif;line-height:.78;letter-spacing:-.01em;color:#f5f0e3}
+html[data-vcs-theme="black-letter"] .masthead-name span{font-size:clamp(4.8rem,10vw,10rem);font-weight:600;letter-spacing:.02em}
+html[data-vcs-theme="black-letter"] .masthead-name strong{font-size:clamp(6rem,13vw,14rem);font-weight:700;letter-spacing:.006em}
+html[data-vcs-theme="black-letter"] .masthead-eyebrow{color:#d2b8a7}
+html[data-vcs-theme="black-letter"] .imprint-strip,
+html[data-vcs-theme="black-letter"] .masthead-under,
+html[data-vcs-theme="black-letter"] .issue-strap,
+html[data-vcs-theme="black-letter"] .paper-nav,
+html[data-vcs-theme="black-letter"] .desk-heading{border-color:#75706c;color:#e1d8c9}
+html[data-vcs-theme="black-letter"] .issue-strap{background:#e8ddd0;color:#151718;padding:12px 15px}
+html[data-vcs-theme="black-letter"] .paper-nav a:hover{color:var(--vcs-accent)}
+html[data-vcs-theme="black-letter"] .front-topline,
+html[data-vcs-theme="black-letter"] .front-headline,
+html[data-vcs-theme="black-letter"] .front-broadsheet,
+html[data-vcs-theme="black-letter"] .front-center,
+html[data-vcs-theme="black-letter"] .front-side-left,
+html[data-vcs-theme="black-letter"] .front-side-right,
+html[data-vcs-theme="black-letter"] .front-ledger,
+html[data-vcs-theme="black-letter"] .front-lead-copy,
+html[data-vcs-theme="black-letter"] .front-article-line,
+html[data-vcs-theme="black-letter"] .print-story,
+html[data-vcs-theme="black-letter"] .ledger-entries a,
+html[data-vcs-theme="black-letter"] .ledger-head,
+html[data-vcs-theme="black-letter"] .archive-row,
+html[data-vcs-theme="black-letter"] .archive-hero,
+html[data-vcs-theme="black-letter"] .notices-heading,
+html[data-vcs-theme="black-letter"] .notice-ad,
+html[data-vcs-theme="black-letter"] .editors-note,
+html[data-vcs-theme="black-letter"] .archive-story .article-hero,
+html[data-vcs-theme="black-letter"] .article-body h2,
+html[data-vcs-theme="black-letter"] .article-edition-bar,
+html[data-vcs-theme="black-letter"] .reading-note,
+html[data-vcs-theme="black-letter"] .after-reading{border-color:#625e5c}
+html[data-vcs-theme="black-letter"] .front-headline h1{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-size:clamp(5rem,8.5vw,9.7rem);font-weight:700;line-height:.88;letter-spacing:.003em}
+html[data-vcs-theme="black-letter"] .front-headline h1 em{font-family:"IM Fell English",Georgia,serif;font-weight:400;font-style:italic;font-size:.65em;line-height:1.1}
+html[data-vcs-theme="black-letter"] .front-subline p{color:#d8c1b0}
+html[data-vcs-theme="black-letter"] .front-broadsheet{grid-template-columns:minmax(0,1.2fr) minmax(0,1.2fr) minmax(250px,1fr)}
+html[data-vcs-theme="black-letter"] .front-center{grid-column:1/3;grid-row:1;padding:25px 24px 25px 0;border-right:1px solid #68605e}
+html[data-vcs-theme="black-letter"] .front-center .print-main-photo>a{height:450px}
+html[data-vcs-theme="black-letter"] .front-center .print-main-photo img{filter:grayscale(1) contrast(1.28)}
+html[data-vcs-theme="black-letter"] .front-side-right{grid-column:3;grid-row:1;padding:25px 0 0 23px;border-left:0}
+html[data-vcs-theme="black-letter"] .front-side-left{grid-column:1/-1;grid-row:2;display:grid;grid-template-columns:1fr 1fr;gap:30px;border-right:0;border-top:1px solid #68605e;padding:22px 0}
+html[data-vcs-theme="black-letter"] .front-side-left .print-story:first-child{border-right:1px solid #68605e;padding-right:25px}
+html[data-vcs-theme="black-letter"] .front-side-left .print-thumb img,
+html[data-vcs-theme="black-letter"] .front-side-right .print-thumb img{filter:grayscale(1) contrast(1.18)}
+html[data-vcs-theme="black-letter"] .print-label,
+html[data-vcs-theme="black-letter"] .print-jump,
+html[data-vcs-theme="black-letter"] .ledger-archive,
+html[data-vcs-theme="black-letter"] .overline{color:#d9ac98}
+html[data-vcs-theme="black-letter"] .print-story h2{font-weight:600;font-size:clamp(2rem,2.8vw,3.3rem)}
+html[data-vcs-theme="black-letter"] .front .classified-box{background:#262524;border-color:#9f8275}
+html[data-vcs-theme="black-letter"] .classified-label,
+html[data-vcs-theme="black-letter"] .fine-print{border-color:#918477}
+html[data-vcs-theme="black-letter"] .fine-print-trigger{color:#e9c8b4}
+html[data-vcs-theme="black-letter"] .front .subscribe-panel{background:#ebdfcf;color:#1b1d1e;border:0}
+html[data-vcs-theme="black-letter"] .front .subscribe-panel .overline,
+html[data-vcs-theme="black-letter"] .front .subscribe-panel small{color:#413c39}
+html[data-vcs-theme="black-letter"] .front .subscribe-panel .form-row button{background:#361b22;border-color:#361b22}
+html[data-vcs-theme="black-letter"] .paper-footer{background:#080a0b;border-top:1px solid #484645}
+html[data-vcs-theme="black-letter"] .footer-bottom{border-color:#484645}
+html[data-vcs-theme="black-letter"] .archive-image{background:#3b3535}
+html[data-vcs-theme="black-letter"] .archive-image img{filter:grayscale(1) contrast(1.2)}
+html[data-vcs-theme="black-letter"] .archive-hero h1 span{color:#c9927d}
+html[data-vcs-theme="black-letter"] .archive-index,
+html[data-vcs-theme="black-letter"] .article-meta{color:#bcaea5}
+html[data-vcs-theme="black-letter"] .article-hero-image img{filter:grayscale(1) contrast(1.2)}
+html[data-vcs-theme="black-letter"] .article-body .related-stories,
+html[data-vcs-theme="black-letter"] .article-body .article-related{background:#25292b;color:#ebe0d1;border-color:#565658}
+html[data-vcs-theme="black-letter"] .article-body blockquote{background:#232526}
+html[data-vcs-theme="black-letter"] .notices-art{background:#2d2024}
+html[data-vcs-theme="black-letter"] .auxiliary-inner p{color:#e1d9cb}
+@media(max-width:850px){
+ html[data-vcs-theme="black-letter"] .front-broadsheet{display:flex;flex-direction:column}
+ html[data-vcs-theme="black-letter"] .front-center{order:0;display:block;padding:16px 0;border:0;border-bottom:2px solid #625e5c}
+ html[data-vcs-theme="black-letter"] .front-side-left{order:1;display:block;padding:15px 0;border:0;border-bottom:1px solid}
+ html[data-vcs-theme="black-letter"] .front-side-left .print-story:first-child{border-right:0}
+ html[data-vcs-theme="black-letter"] .front-side-right{order:2;padding:15px 0;border:0}
+ html[data-vcs-theme="black-letter"] .front-headline h1{font-size:clamp(4rem,9vw,6.5rem)}
+}
+@media(max-width:650px){
+ html[data-vcs-theme="black-letter"] .masthead-name span{font-size:clamp(3.3rem,12vw,5.8rem)}
+ html[data-vcs-theme="black-letter"] .masthead-name strong{font-size:clamp(4rem,14vw,6.7rem)}
+ html[data-vcs-theme="black-letter"] .front-headline h1{font-size:clamp(3.8rem,12vw,5.5rem)}
+ html[data-vcs-theme="black-letter"] .front-center .print-main-photo>a{height:350px}
+}

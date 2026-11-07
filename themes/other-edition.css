@@ -1,0 +1,3 @@
+/* Locked original theme: The Other Edition. Current broadsheet look is the base visual system. */
+html[data-vcs-theme="other-edition"] .masthead-name:hover,
+html[data-vcs-theme="other-edition"] .ledger-archive:hover{color:var(--vcs-accent)}

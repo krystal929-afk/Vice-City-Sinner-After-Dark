@@ -1,0 +1,44 @@
+/* The VCS Art Vault / a tactile cabinet of images. */
+.art-vault{position:relative;border-top:3px double #a57a94;padding-top:25px!important}
+.art-vault .control-heading h2{font-size:32px;font-style:italic}
+.vault-lede{font:17px/1.35 "IM Fell English",Georgia,serif;color:#dfc7d4;margin:0 0 15px}
+.vault-actions{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0}
+.vault-actions .action{flex:1;min-width:110px}
+.vault-upload{position:relative;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
+.vault-upload input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
+.vault-hint{font:11px/1.5 "DM Sans",sans-serif;color:#c2adbd;margin:7px 0 12px}
+.art-vault label:not(.vault-upload){display:flex;flex-direction:column;gap:6px;font:600 11px/1.3 "DM Sans",sans-serif;color:#d9c5d4}
+.art-vault input[type=text],.art-vault select{width:100%;padding:9px 8px;border:1px solid #80637a;background:#241b29;color:#f1e3e9;font:13px/1.4 "DM Sans",sans-serif;min-height:39px;border-radius:0}
+.vault-slot-panel{border:1px solid #785c70;background:#19131d;padding:12px;margin:17px 0}
+.vault-library-heading{display:flex;align-items:baseline;justify-content:space-between;border-bottom:1px solid #7d5d73;padding:7px 0;margin:15px 0 9px}
+.vault-library-heading strong{font:600 22px "Newsreader",Georgia,serif}
+.vault-library-heading span{font:11px "DM Sans",sans-serif;color:#c6a8bc}
+.vault-library{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;max-height:330px;overflow:auto;padding:2px}
+.vault-library .vault-asset{min-width:0;background:#211723;border:1px solid #6e5166;color:#f0dce6;padding:0;position:relative;display:flex;flex-direction:column;cursor:pointer;text-align:left}
+.vault-library .vault-asset.is-selected{outline:2px solid #b8ff2d;outline-offset:-2px}
+.vault-asset img{height:83px;width:100%;object-fit:cover;display:block;background:#0b090c}
+.vault-asset span{font:11px/1.2 "DM Sans",sans-serif;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%;padding:7px 5px}
+.vault-empty{grid-column:1/-1;font:italic 15px "IM Fell English",serif;color:#b99eaf;padding:12px;border:1px dashed #775a6d;text-align:center}
+.vault-edit{border:1px solid #806378;padding:12px;margin:16px 0;background:#1e1420}
+.vault-current{display:grid;grid-template-columns:95px 1fr;gap:12px;align-items:center;margin-bottom:14px}
+.vault-thumb{height:88px;background:#100b13;border:1px solid #6a5063;display:grid;place-items:center;overflow:hidden}
+.vault-thumb img{width:100%;height:100%;object-fit:contain}
+.vault-thumb img[hidden]{display:none}
+.vault-thumb span{font:700 10px "Barlow Condensed",sans-serif;text-align:center;color:#af92a6;padding:8px}
+.vault-current strong{font:600 18px/1.12 "Newsreader",serif}
+.vault-edit .control-grid{margin:12px 0}
+.vault-range{display:grid!important;grid-template-columns:1fr auto;gap:8px;margin:13px 0}
+.vault-range input{grid-column:1/-1;width:100%;accent-color:#ce98b6}
+.vault-range output{color:#dfb6cf;font:600 11px "DM Sans",sans-serif}
+.vault-collections{padding:17px 0;border-top:3px double #855f77}
+.vault-import{color:#e7bed3;font:12px "DM Sans",sans-serif;text-decoration:underline;text-underline-offset:4px;margin:8px 0}
+.vault-collection-list{display:flex;flex-direction:column;gap:7px;margin:11px 0}
+.vault-collection-row{padding:8px;border:1px solid #634d5e;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.vault-collection-row strong{font:600 16px/1.1 "Newsreader",serif}
+.vault-collection-row .action{min-height:29px;padding:5px 8px;font-size:10px}
+.vault-collection-row small{display:block;color:#bca8b8;font-size:10px;margin-top:3px}
+.vault-status{font:700 12px/1.4 "Barlow Condensed",sans-serif;letter-spacing:.04em;color:#b8ff2d;border-top:1px solid #75576b;padding-top:10px;margin:0}
+#art-pick[aria-pressed=true]{background:#b8ff2d;color:#15170e;border-color:#b8ff2d}
+@media(max-width:620px){.vault-library{grid-template-columns:repeat(3,minmax(0,1fr))}.vault-asset img{height:80px}}
+
+.vault-jump{display:inline-flex;margin-top:16px;align-items:center;color:#e9cfdf}.vault-thumb span[hidden]{display:none}

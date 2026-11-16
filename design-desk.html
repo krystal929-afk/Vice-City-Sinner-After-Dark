@@ -4,7 +4,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700;6..72,800&family=DM+Sans:wght@400;500;600;700&family=IM+Fell+English:ital@0;1&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600;6..96,700;6..96,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="design-desk.css?v=2"><script src="publication-config.js?v=2"></script><script defer src="design-desk.js?v=2"></script>
-</head><body>
+<link rel="stylesheet" href="art-vault-desk.css?v=1"><script src="artwork-db.js?v=1"></script><script src="artwork-slots.js?v=1"></script><script src="artwork-config.js?v=1"></script><script defer src="art-vault-desk.js?v=1"></script></head><body>
 <header class="desk-top">
 <div class="desk-top-left"><a class="desk-brand" href="index.html" aria-label="Vice City Sinner front page"><strong>VICE CITY SINNER</strong><small>THE ART DEPARTMENT</small></a></div>
 <span class="desk-top-center">THE JOURNAL OF THINGS SLIGHTLY OUT OF PLACE</span>
@@ -17,7 +17,7 @@
 <span class="eyebrow">PROOF ROOM / DESIGN DESK / UNLISTED STAGING</span>
 <h1>MAKE<br>IT <em>STRANGE.</em></h1>
 <p>The newsroom is a blank canvas with a questionable sense of reality. Change everything but the actual reporting.</p>
-<div class="intro-ornament"><span>✦</span><i>WHAT YOU SEE IS NOT NECESSARILY WHAT YOU PRINT.</i></div>
+<a class="action vault-jump" href="#art-vault-title">Open the Art Vault ↘</a><div class="intro-ornament"><span>✦</span><i>WHAT YOU SEE IS NOT NECESSARILY WHAT YOU PRINT.</i></div>
 </div>
 <div class="controls-body">
 <section class="control-group" aria-labelledby="skins-title">
@@ -51,14 +51,39 @@
 <label class="accent-custom">Or choose your own devilish color <div class="color-row"><input id="accent" type="color" value="#2b4d58" aria-label="Custom accent ink"><output id="accent-label" for="accent">#2B4D58</output></div></label>
 <div class="inspiration-actions"><button class="action primary surprise" type="button" id="surprise">SURPRISE ME ✦</button><button class="action subtle" type="button" id="reset-design">Restore this edition</button></div>
 </section>
-<section class="control-group" aria-labelledby="vault-title"><div class="control-heading"><span>04 / KEEP THE ONES THAT GET UNDER YOUR SKIN</span><h2 id="vault-title">The proof drawer</h2></div>
+<section class="control-group art-vault" aria-labelledby="art-vault-title">
+<div class="control-heading"><span>04 / ILLUSTRATIONS &amp; OTHER APPARITIONS</span><h2 id="art-vault-title">The Art Vault</h2></div>
+<p class="vault-lede">Dress the paper in your own artwork. Original images remain untouched.</p>
+<div class="vault-actions"><label class="vault-upload action primary" tabindex="0">Upload artwork +<input type="file" id="art-upload" accept="image/jpeg,image/png,image/webp,image/gif" multiple></label><button id="art-pick" class="action" type="button" aria-pressed="false">Select in preview</button></div>
+<p class="vault-hint">JPEG, PNG, WebP or GIF · up to 8 MB per image. Stored in this browser until you export or publish.</p>
+<div class="vault-slot-panel"><label for="art-slot">Artwork location</label><select id="art-slot"></select><p id="art-original-note" class="vault-hint"></p></div>
+<div class="vault-library-heading"><strong>The collection</strong><span id="art-count">0 images</span></div>
+<div class="vault-library" id="art-library" aria-live="polite"></div>
+<div class="vault-edit">
+<div class="vault-current"><div class="vault-thumb"><img id="art-current-img" alt="" hidden><span id="art-empty">SELECT AN IMAGE</span></div><div><strong id="art-current-name">Original artwork</strong><p id="art-current-status" class="vault-hint">Choose a location and image.</p></div></div>
+<label for="art-alt">Replacement image description / alt text<input id="art-alt" type="text" maxlength="300" placeholder="Describe the actual image"></label>
+<div class="control-grid"><label>Crop shape<select id="art-crop"><option value="original">Keep original frame</option><option value="square">Square</option><option value="portrait">Portrait 3:4</option><option value="landscape">Landscape 4:3</option><option value="wide">Wide 16:9</option></select></label><label>Image fit<select id="art-fit"><option value="cover">Fill frame / crop</option><option value="contain">Show full image</option></select></label></div>
+<label class="vault-range">Horizontal position <output id="art-x-value">50%</output><input type="range" id="art-x" min="0" max="100" value="50"></label>
+<label class="vault-range">Vertical position <output id="art-y-value">50%</output><input type="range" id="art-y" min="0" max="100" value="50"></label>
+<div class="vault-actions"><button id="art-apply" type="button" class="action primary">Place artwork</button><button id="art-restore" type="button" class="action subtle">Restore original</button></div>
+<p class="vault-hint">Use approved real photographs for identifiable people. Check captions and credits before publishing a replacement.</p></div>
+<div class="vault-collections"><div class="control-heading"><span>ARTWORK PROOFS / LOCAL CABINET</span><h2>Edition collections</h2></div>
+<label for="art-collection-name">Collection name<input id="art-collection-name" type="text" maxlength="64" placeholder="The winter collection"></label>
+<div class="vault-actions"><button class="action" id="art-save" type="button">Save collection</button><button class="action" id="art-export" type="button">Export artwork pack</button></div>
+<label class="vault-upload vault-import">Import artwork pack<input type="file" id="art-import" accept=".json,application/json"></label>
+<div id="art-collections" class="vault-collection-list"></div>
+<button class="action release" id="art-publish" type="button">Download artwork publishing file</button>
+<p class="vault-hint">Exported artwork packs contain the actual images. Publishing requires committing the artwork configuration to the staging repository. Nothing publishes automatically.</p>
+</div><p id="art-status" class="vault-status" role="status" aria-live="polite">The vault is opening.</p>
+</section>
+<section class="control-group" aria-labelledby="vault-title"><div class="control-heading"><span>05 / KEEP THE ONES THAT GET UNDER YOUR SKIN</span><h2 id="vault-title">The proof drawer</h2></div>
 <label class="draft-name-label">Give this design a name<input id="draft-name" type="text" maxlength="64" placeholder="E.g. October after midnight"></label>
 <label class="draft-name-label">Art director’s notes<textarea id="art-notes" rows="2" maxlength="600" placeholder="What makes this one strange?"></textarea></label>
 <div class="action-row"><button class="action primary" id="save-draft" type="button">Save draft locally</button><button class="action" id="export-draft" type="button">Download design pack</button></div>
 <div class="draft-list" id="draft-list" aria-live="polite"><p class="empty-drafts">No saved designs in this browser yet.</p></div>
 <label class="import-draft">Import an earlier design pack<input id="import-pack" type="file" accept=".json,application/json"></label>
 </section>
-<section class="control-group" aria-labelledby="release-title"><div class="control-heading"><span>05 / SEND IT TO THE PRESSES</span><h2 id="release-title">Release room</h2></div>
+<section class="control-group" aria-labelledby="release-title"><div class="control-heading"><span>06 / SEND IT TO THE PRESSES</span><h2 id="release-title">Release room</h2></div>
 <p class="fine-copy">Previewing and saving here never publishes a new site design. For a permanent change across every visitor's browser, export the publishing file and update the staging repository, or send the saved pack to Corvus.</p>
 <button class="action release" id="export-publish" type="button">Download publishing file</button>
 <div class="action-row"><button class="action" id="use-local" type="button">Use on my device</button><button class="action subtle" id="reset-local" type="button">Reset my device</button></div>
@@ -66,7 +91,7 @@
 </section>
 </div></section>
 <section class="preview-area" aria-label="Live publication preview">
-<div class="preview-heading"><div><span class="eyebrow">THE PROOFING GLASS / A WORKING NEWSPAPER</span><h2 id="preview-title">The Other Edition</h2></div><div class="preview-actions"><label class="preview-page-label">Preview page <select id="preview-page"><option value="index.html">Front page</option><option value="archive.html">The archive</option><option value="notices.html">The notices</option><option value="hoochie-daddy.html">A feature article</option></select></label><button class="action small" id="open-preview" type="button">Open full size ↗</button><a class="action small" href="index.html">Current publication ↗</a><a class="action small" href="editions.html">Issue cabinet ↗</a></div></div>
+<div class="preview-heading"><div><span class="eyebrow">THE PROOFING GLASS / A WORKING NEWSPAPER</span><h2 id="preview-title">The Other Edition</h2></div><div class="preview-actions"><label class="preview-page-label">Preview page <select id="preview-page"><option value="index.html">Front page</option><option value="archive.html">The archive</option><option value="notices.html">The notices</option><option value="hoochie-daddy.html">Hoochie Daddy</option><option value="foxhole.html">Foxhole</option><option value="hair-metal.html">Hair Metal</option><option value="real-name.html">Real Name</option><option value="dungeon.html">Dungeon</option><option value="about.html">About</option></select></label><button class="action small" id="open-preview" type="button">Open full size ↗</button><a class="action small" href="index.html">Current publication ↗</a><a class="action small" href="editions.html">Issue cabinet ↗</a></div></div>
 <div class="preview-frame"><iframe id="site-preview" title="Interactive Vice City Sinner publication preview" src="index.html?vcs_preview=1&vcs_theme=other-edition" loading="eager"></iframe></div>
 <div class="preview-footer"><span>Clickable proof: visit articles and archives without releasing a single change.</span><span id="status" role="status" aria-live="polite">NO PLATES HAVE BEEN PRINTED.</span></div>
 </section>

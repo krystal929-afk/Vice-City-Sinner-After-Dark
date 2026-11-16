@@ -5,7 +5,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600;6..96,700;6..96,800;6..96,900&family=DM+Sans:wght@400;500;600;700&family=IM+Fell+English:ital@0;1&family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700;6..72,800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="newspaper.css?v=03"><script src="publication-config.js?v=2"></script><script src="edition-engine.js?v=2"></script><link rel="stylesheet" href="edition-controls.css?v=2"><script defer src="newspaper.js?v=01"></script>
-</head><body class="newspaper newspaper-edition"><div class="newspaper-wrap"><header class="paper-header">
+<link rel="stylesheet" href="art-vault.css?v=1"><script src="artwork-config.js?v=1"></script><script src="artwork-slots.js?v=1"></script><script src="artwork-db.js?v=1"></script><script defer src="artwork-runtime.js?v=1"></script></head><body class="newspaper newspaper-edition"><div class="newspaper-wrap"><header class="paper-header">
   <div class="imprint-strip"><span>THE SOUTHERN COAST / INDEPENDENT PRESS</span><span class="imprint-mid">CULTURE, SOCIETY & THE NIGHT SHIFT</span><span>VICE CITY / SOUTH FLORIDA</span></div>
   <div class="masthead">
     <p class="masthead-eyebrow">An independent newspaper of the South Florida coast</p>
@@ -23,7 +23,7 @@
   <article class="print-story">
    <div class="print-label">STYLE & HISTORY / NO. 02</div>
    <h2><a href="hoochie-daddy.html">The Hoochie Daddy Has Historical Precedent</a></h2>
-   <figure class="print-thumb"><a href="hoochie-daddy.html"><img src="assets/hoochie-daddy-satanica-web.webp" loading="lazy" alt="Mr. Satan photographed for the original Hoochie Daddy feature"></a><figcaption>Original VCS feature photograph</figcaption></figure>
+   <figure class="print-thumb"><a href="hoochie-daddy.html"><img data-art-slot="index-1" src="assets/hoochie-daddy-satanica-web.webp" loading="lazy" alt="Mr. Satan photographed for the original Hoochie Daddy feature"></a><figcaption>Original VCS feature photograph</figcaption></figure>
    <div class="print-copy"><p>Somewhere around 2022, the internet collectively discovered that men have thighs.</p><p>Suddenly every other video was about five-inch inseams, exposed quads and the arrival of Hoochie Daddy Summer. Men who had spent most of their adult lives in cargo shorts hovering somewhere around the kneecap were being encouraged to hike that hemline north and let nature take its course, and everybody reacted as though the male upper thigh had just been invented.</p></div>
    <a class="print-jump" href="hoochie-daddy.html">Continued in Style →</a>
   </article>
@@ -36,7 +36,7 @@
  </aside>
  <article class="front-center" aria-labelledby="front-lead-title">
   <figure class="print-main-photo">
-   <a href="foxhole.html"><img src="assets/foxhole-satanica-web.webp" alt="Original photograph of Satanica Lux at dusk for the Foxhole editorial" fetchpriority="high"></a>
+   <a href="foxhole.html"><img data-art-slot="index-2" src="assets/foxhole-satanica-web.webp" alt="Original photograph of Satanica Lux at dusk for the Foxhole editorial" fetchpriority="high"></a>
    <figcaption><span>VICE CITY SINNER / ORIGINAL EDITORIAL PHOTOGRAPHY</span><span>PAGE 1</span></figcaption>
   </figure>
   <div class="front-lead-copy">
@@ -49,7 +49,7 @@
   <article class="print-story">
    <div class="print-label">STYLE / AT LARGE</div>
    <h2><a href="hair-metal.html">I'm Bringing Back Hair Metal Fashion. Sorry Not Sorry.</a></h2>
-   <figure class="print-thumb print-thumb-wide"><a href="hair-metal.html"><img src="assets/hair-metal-header-satanica-web.webp" loading="lazy" alt="Original fashion portrait for the hair metal article"></a><figcaption>From our style pages</figcaption></figure>
+   <figure class="print-thumb print-thumb-wide"><a href="hair-metal.html"><img data-art-slot="index-3" src="assets/hair-metal-header-satanica-web.webp" loading="lazy" alt="Original fashion portrait for the hair metal article"></a><figcaption>From our style pages</figcaption></figure>
    <div class="print-copy"><p>I wear black almost every day.</p><p>Black shirt. Black skirt. Black boots. Black tights. Black jacket. My nails are usually black or red. If there is actual color involved, it is probably in my hair, my earrings, or some piece of jewelry I decided needed to be obnoxious enough to carry the entire outfit.</p><p>I have no intention of changing that.</p><p>What I am interested in changing is the moment when an all-black alternative wardrobe starts becoming less of a personal style and more of a uniform you assembled on autopilot.</p></div>
    <a class="print-jump" href="hair-metal.html">Continued in Style →</a>
   </article>
@@ -77,7 +77,7 @@
     <div class="notice"><span class="overline">MUNICIPAL STREET REGISTER</span><h3>Pelican Row ends at No. 16</h3><p>The city survey confirms eight numbered houses. A request to amend the register has been reviewed and declined.</p></div>
   </div>
  </div>
- <aside class="classified-box"><span class="tiny-stamp" aria-hidden="true">✳ 05</span><div class="classified-label">CLASSIFIED ADVERTISEMENTS</div><h2>THE BELLWETHER ROOMS</h2><p>18 Pelican Row. Furnished rooms with shaded verandas, private baths and an unobstructed view of the bay. Apply at the downstairs desk after six.</p><button class="fine-print-trigger" type="button" aria-expanded="false" aria-controls="fine-print">Examine the small print <span aria-hidden="true">+</span></button><p class="fine-print" id="fine-print" hidden>Applications must include a photograph of the front entrance. Envelopes containing street maps will be returned unopened.</p><a class="small-ad-link" href="notices.html">See the original notices ↗</a></aside>
+ <aside class="classified-box"><span class="tiny-stamp" aria-hidden="true">✳ 05</span><img data-art-slot="index-classified" class="vault-classified-art" alt="" hidden><div class="classified-label">CLASSIFIED ADVERTISEMENTS</div><h2>THE BELLWETHER ROOMS</h2><p>18 Pelican Row. Furnished rooms with shaded verandas, private baths and an unobstructed view of the bay. Apply at the downstairs desk after six.</p><button class="fine-print-trigger" type="button" aria-expanded="false" aria-controls="fine-print">Examine the small print <span aria-hidden="true">+</span></button><p class="fine-print" id="fine-print" hidden>Applications must include a photograph of the front entrance. Envelopes containing street maps will be returned unopened.</p><a class="small-ad-link" href="notices.html">See the original notices ↗</a></aside>
 </section>
 <section class="subscribe-panel" id="subscribe"><div><span class="overline">DELIVERY SERVICE / OFFICIAL SUBSCRIPTION</span><h2>YOU MAY HAVE MISSED SOMETHING.</h2><p>Get the next edition in your inbox. The stories are real. The margins have other ideas.</p></div>
 <form action="https://eocampaign1.com/form/101daadc-bbc9-11f1-8902-1b2bd70a4e23" method="POST" enctype="multipart/form-data"><label for="email">YOUR ADDRESS, PLEASE</label><div class="form-row"><input id="email" type="email" name="field_0" placeholder="email@example.com" autocomplete="email" required><button type="submit">SUBSCRIBE ↗</button></div><input class="trap" name="hpc4b27b6e-eb38-11e9-be00-06b4694bee2a" autocomplete="off" tabindex="-1" aria-hidden="true"><small>This is the publication's existing signup list. Submissions are real.</small></form>

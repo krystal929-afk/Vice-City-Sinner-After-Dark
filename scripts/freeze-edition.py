@@ -80,10 +80,14 @@ def main():
             source=source.replace('href="editions.html"','href="../../editions.html"')
             attrs=' '.join('data-vcs-'+re.sub(r"(?<!^)(?=[A-Z])","-",k).lower()+'="'+html.escape(str(v),quote=True)+'"' for k,v in design.items() if k!="accent")
             source=source.replace("<html lang=\"en\">",'<html lang="en" '+attrs+' style="--vcs-accent:'+design["accent"]+'">',1)
+            source=source.replace('<html lang="en"','<html lang="en" data-vcs-art-frozen="true"',1)
             (target/page).write_text(source,encoding="utf-8")
         shutil.copy2(ROOT/"newspaper.css",target/"newspaper.css")
         shutil.copy2(ROOT/"edition-controls.css",target/"edition-controls.css")
         shutil.copy2(ROOT/"newspaper.js",target/"newspaper.js")
+        # Freeze the actual released artwork and its local renderer, not browser drafts.
+        for art_file in ["artwork-config.js","artwork-slots.js","artwork-db.js","artwork-runtime.js","art-vault.css"]:
+            shutil.copy2(ROOT/art_file,target/art_file)
         (target/"themes").mkdir()
         shutil.copy2(stylesheet,target/"themes"/stylesheet.name)
         # Preserve real article photographs at the point of publication.

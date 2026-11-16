@@ -54,3 +54,12 @@ Other live controls: density, five headline types, five masthead styles, five ph
 The Surprise Me control generates a new combination in the preview only; it does not modify the published site.
 The proof drawer preserves a design's name, optional art-director notes and all its settings in a downloadable v2 JSON design pack.
 Existing v1 saved packs continue to load with the new settings defaulted.
+
+
+## Art Vault (Design Desk)
+
+Open the Art Vault from the Design Desk. Upload JPEG, PNG, WebP or GIF (8 MB per file); the original bytes are stored in IndexedDB in the browser, never uploaded automatically. Select an artwork location using the dropdown or click an outlined image in Select in preview mode. Choose an image, add its accurate alt description, set the frame shape and fit, and place it. The crop/position controls never modify the original image. Check factual image captions and credits before releasing a changed photograph. Empty illustration slots are available for the fictional advertisement and notices.
+
+Save named artwork collections independently from design drafts; export an artwork pack to retain the assigned images and placements across browsers. Import restores the collection without publishing. Browser storage is not a backup. The publishing export is a separate artwork-config.js file containing the selected images and placements, and must be reviewed and committed to the staging repository to release. Normal visitors never see locally stored artwork drafts. Artwork is public only once its publishing file is committed to a public repository. Keep sensitive images out of released packs.
+
+Freeze an approved outgoing edition only after its artwork-config.js has been finalized. The historical snapshot includes the released artwork configuration, image slots, renderer and styles. An archived edition ignores local artwork previews. The original repository image files are not overwritten.

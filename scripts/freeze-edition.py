@@ -23,7 +23,7 @@ ROOT=Path(__file__).resolve().parents[1]
 PAGES=["index.html","archive.html","notices.html","foxhole.html","hoochie-daddy.html",
        "hair-metal.html","real-name.html","dungeon.html","about.html","links.html",
        "subscribed.html","404.html"]
-ALLOWED_THEMES={"other-edition","blue-hour","black-letter","velvet-vice","acid-riviera","sunday-strange"}
+ALLOWED_THEMES={"other-edition","blue-hour","black-letter","velvet-vice","acid-riviera","sunday-strange","vice-city-gazette"}
 ALLOWED_LAYOUTS={"broadsheet","folio","poster","editorial","gallery"}
 ALLOWED_DENSITIES={"classic","compact","airy"}
 ALLOWED_HEADLINES={"newspaper","deco","condensed","slab","italic"}
@@ -68,8 +68,8 @@ def main():
     if target.exists():a.error("Edition already exists. Frozen editions cannot be overwritten.")
     stylesheet=ROOT/"themes"/(design["theme"]+".css")
     if not stylesheet.exists():a.error("Theme CSS not found.")
-    marker='<script src="publication-config.js?v=2"></script><script src="edition-engine.js?v=2"></script><link rel="stylesheet" href="edition-controls.css?v=2">'
-    frozen_styles='<link rel="stylesheet" href="themes/'+design["theme"]+'.css"><link rel="stylesheet" href="edition-controls.css?v=2">'
+    marker='<script src="publication-config.js?v=3"></script><script src="edition-engine.js?v=3"></script><link rel="stylesheet" href="edition-controls.css?v=3">'
+    frozen_styles='<link rel="stylesheet" href="themes/'+design["theme"]+'.css"><link rel="stylesheet" href="edition-controls.css?v=3">'
     target.mkdir(parents=True)
     try:
         for page in PAGES:

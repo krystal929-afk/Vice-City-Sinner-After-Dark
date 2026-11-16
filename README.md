@@ -63,3 +63,7 @@ Open the Art Vault from the Design Desk. Upload JPEG, PNG, WebP or GIF (8 MB per
 Save named artwork collections independently from design drafts; export an artwork pack to retain the assigned images and placements across browsers. Import restores the collection without publishing. Browser storage is not a backup. The publishing export is a separate artwork-config.js file containing the selected images and placements, and must be reviewed and committed to the staging repository to release. Normal visitors never see locally stored artwork drafts. Artwork is public only once its publishing file is committed to a public repository. Keep sensitive images out of released packs.
 
 Freeze an approved outgoing edition only after its artwork-config.js has been finalized. The historical snapshot includes the released artwork configuration, image slots, renderer and styles. An archived edition ignores local artwork previews. The original repository image files are not overwritten.
+
+## Approved Gazette design
+
+The Vice City Gazette is the new staging default, translating the approved illustrated tropical newspaper mockup into a functional layout. The real 2026 issue dates, article text, credits and original photographs are preserved. The two masthead ornaments and fictional Bellwether Rooms illustration are original decorative SVG assets. The earlier six themes remain available. The new front-page Identity photograph and illustrated classified are Art Vault slots. New articles are not published until final approval. The live custom domain is unaffected.

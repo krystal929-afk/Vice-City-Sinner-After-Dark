@@ -24,7 +24,7 @@ window.VCS_ART_SLOTS = [
     "id": "index-classified",
     "page": "index.html",
     "label": "Bellwether Rooms advertisement artwork",
-    "src": "",
+    "src": "assets/gazette/bellwether.svg",
     "kind": "decoration"
   },
   {
@@ -207,6 +207,13 @@ window.VCS_ART_SLOTS = [
     "page": "about.html",
     "label": "Satanica Lux",
     "src": "assets/about-satanica.webp",
+    "kind": "image"
+  },
+  {
+    "id": "index-identity",
+    "page": "index.html",
+    "label": "Identity feature photograph",
+    "src": "assets/identity-satanica-web.webp",
     "kind": "image"
   }
 ];

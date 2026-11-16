@@ -34,8 +34,8 @@ function previewUrl(){
  return u.href;
 }
 function feedback(msg){$("status").textContent=msg}
-const swatchClasses={"other-edition":"swatch-paper","blue-hour":"swatch-blue","black-letter":"swatch-black","velvet-vice":"swatch-velvet","acid-riviera":"swatch-acid","sunday-strange":"swatch-sunday"};
-const themeSubtitles={"other-edition":"Uncanny broadsheet","blue-hour":"Sea-glass / dreamlike","black-letter":"Midnight tabloid","velvet-vice":"Plum / gothic couture","acid-riviera":"Black / acid ink","sunday-strange":"Bleached / quietly wrong"};
+const swatchClasses={"vice-city-gazette":"swatch-paper","other-edition":"swatch-paper","blue-hour":"swatch-blue","black-letter":"swatch-black","velvet-vice":"swatch-velvet","acid-riviera":"swatch-acid","sunday-strange":"swatch-sunday"};
+const themeSubtitles={"vice-city-gazette":"Illustrated tropical broadsheet","other-edition":"Uncanny broadsheet","blue-hour":"Sea-glass / dreamlike","black-letter":"Midnight tabloid","velvet-vice":"Plum / gothic couture","acid-riviera":"Black / acid ink","sunday-strange":"Bleached / quietly wrong"};
 const themeChoices=$("theme-choices");
 themeChoices.replaceChildren();
 for(const [key,theme] of Object.entries(catalog.themes)){

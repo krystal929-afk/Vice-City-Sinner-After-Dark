@@ -6,9 +6,16 @@
 window.VCS_PUBLICATION = {
   version: 1,
   title: "Vice City Sinner",
-  defaultTheme: "other-edition",
-  defaultSettings: {layout:"broadsheet",density:"classic",headlines:"newspaper",accent:"#2b4d58",masthead:"heritage",photos:"archival",paper:"newsprint",rules:"classic",copySize:"standard"},
+  defaultTheme: "vice-city-gazette",
+  defaultSettings: {layout:"broadsheet",density:"classic",headlines:"newspaper",accent:"#8a354b",masthead:"heritage",photos:"truecolor",paper:"newsprint",rules:"classic",copySize:"standard"},
   themes: {
+    "vice-city-gazette": {
+      label:"The Vice City Gazette",
+      description:"The approved illustrated newspaper: tropical engraved masthead, warm newsprint, modern editorial art, and quietly impossible classifieds.",
+      css:"themes/vice-city-gazette.css",
+      defaultAccent:"#8a354b",
+      mode:"gazette"
+    },
     "other-edition": {
       label:"The Other Edition",
       description:"The original alternate-universe broadsheet. Aged paper, razor-sharp ink, details that wait to be found.",

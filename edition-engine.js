@@ -31,7 +31,7 @@ const active={theme};
 for(const key of Object.keys(options)){
  active[key]=valid(key,query.get("vcs_"+key)||stored?.[key]||defs[key],(defs[key]&&options[key].includes(defs[key]))?defs[key]:options[key][0]);
 }
-const desiredAccent=query.get("vcs_accent")||(stored&&stored.theme===theme&&stored.accent)||knownThemes[theme].defaultAccent||defs.accent;
+const desiredAccent=query.get("vcs_accent")||(stored&&stored.theme===theme&&stored.accent)||(theme===catalog.defaultTheme?defs.accent:knownThemes[theme].defaultAccent)||knownThemes[theme].defaultAccent;
 active.accent=color(desiredAccent)?desiredAccent:"#2b4d58";
 for(const key of Object.keys(options))root.dataset["vcs"+key.charAt(0).toUpperCase()+key.slice(1)]=active[key];
 root.dataset.vcsTheme=theme;
@@ -39,7 +39,7 @@ root.style.setProperty("--vcs-accent",active.accent);
 root.style.setProperty("color-scheme",["black-letter","velvet-vice","acid-riviera"].includes(theme)?"dark":"light");
 const link=document.createElement("link");
 link.rel="stylesheet";
-link.href=knownThemes[theme].css+"?v=2";
+link.href=knownThemes[theme].css+"?v=3";
 link.setAttribute("data-vcs-theme-css","");
 document.head.appendChild(link);
 window.VCS_EDITION={

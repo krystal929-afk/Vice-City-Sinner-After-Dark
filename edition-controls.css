@@ -174,3 +174,6 @@ html[data-vcs-theme="acid-riviera"] .masthead-under .tiny-crest{color:var(--vcs-
 /* Illustrated Gazette-specific markup remains invisible in other design editions. */
 .gazette-ornament,.gazette-kicker,.gazette-the,.gazette-tagline,.gazette-lead-deck,.gazette-identity-photo{display:none}
 html:not([data-vcs-theme="vice-city-gazette"]) .vault-classified-art:not(.vault-replaced){display:none}
+
+/* Exact approved Gazette graphics and printed furniture stay exclusive to the Gazette theme. */
+.reference-masthead,.gazette-issue-line,.gazette-address,.gazette-ad-line,.gazette-municipal-title{display:none}

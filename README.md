@@ -67,3 +67,11 @@ Freeze an approved outgoing edition only after its artwork-config.js has been fi
 ## Approved Gazette design
 
 The Vice City Gazette is the new staging default, translating the approved illustrated tropical newspaper mockup into a functional layout. The real 2026 issue dates, article text, credits and original photographs are preserved. The two masthead ornaments and fictional Bellwether Rooms illustration are original decorative SVG assets. The earlier six themes remain available. The new front-page Identity photograph and illustrated classified are Art Vault slots. New articles are not published until final approval. The live custom domain is unaffected.
+
+## Reference-faithful Gazette update
+
+The Gazette staging theme now uses artwork cropped directly from the approved user-supplied newspaper reference, stored under assets/mockup/ as self-contained image SVG wrappers. This is not a screenshot of the whole page. The masthead is a single illustrative logo asset; all real story headlines, navigation, body copy, classifications, links, articles and the archive remain genuine HTML content. Featured editorial, hair-metal, identity and fictional hotel illustrations match the reference artwork; original photography and article content remain available on their corresponding article pages.
+
+Do not backdate real article publication dates to match the mockup's fictional historical look. The edition date stays current in live HTML, while the imported masthead and typography establish the period design. Other site themes and the Design Desk / Art Vault are untouched.
+
+This is the staging site only; vicecitysinner.com was not edited.

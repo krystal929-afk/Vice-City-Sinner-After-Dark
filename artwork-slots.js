@@ -10,21 +10,21 @@ window.VCS_ART_SLOTS = [
     "id": "index-2",
     "page": "index.html",
     "label": "Original photograph of Satanica Lux at dusk for the Foxhole editorial",
-    "src": "assets/foxhole-satanica-web.webp",
+    "src": "assets/mockup/hero.svg",
     "kind": "image"
   },
   {
     "id": "index-3",
     "page": "index.html",
     "label": "Original fashion portrait for the hair metal article",
-    "src": "assets/hair-metal-header-satanica-web.webp",
+    "src": "assets/mockup/hair.svg",
     "kind": "image"
   },
   {
     "id": "index-classified",
     "page": "index.html",
     "label": "Bellwether Rooms advertisement artwork",
-    "src": "assets/gazette/bellwether.svg",
+    "src": "assets/mockup/bellwether.svg",
     "kind": "decoration"
   },
   {
@@ -213,7 +213,7 @@ window.VCS_ART_SLOTS = [
     "id": "index-identity",
     "page": "index.html",
     "label": "Identity feature photograph",
-    "src": "assets/identity-satanica-web.webp",
+    "src": "assets/mockup/identity.svg",
     "kind": "image"
   }
 ];

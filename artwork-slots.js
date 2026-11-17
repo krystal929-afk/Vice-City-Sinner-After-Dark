@@ -213,7 +213,7 @@ window.VCS_ART_SLOTS = [
     "id": "index-identity",
     "page": "index.html",
     "label": "Identity feature photograph",
-    "src": "assets/mockup/identity.jpg",
+    "src": "assets/mockup/identity-clean.jpg",
     "kind": "image"
   }
 ];

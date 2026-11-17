@@ -439,3 +439,7 @@ html[data-vcs-theme="vice-city-gazette"] .front .subscribe-panel{
  }
  html[data-vcs-theme="vice-city-gazette"] .gazette-issue-line strong{grid-column:1/-1}
 }
+
+/* Reference polish: the dateline already does the work of a desk heading. */
+html[data-vcs-theme="vice-city-gazette"] .front>.desk-heading{display:none}
+html[data-vcs-theme="vice-city-gazette"] .gazette-identity-photo img{aspect-ratio:173 / 315!important;object-fit:cover!important}

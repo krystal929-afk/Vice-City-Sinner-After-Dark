@@ -68,8 +68,8 @@ def main():
     if target.exists():a.error("Edition already exists. Frozen editions cannot be overwritten.")
     stylesheet=ROOT/"themes"/(design["theme"]+".css")
     if not stylesheet.exists():a.error("Theme CSS not found.")
-    marker='<script src="publication-config.js?v=3"></script><script src="edition-engine.js?v=3"></script><link rel="stylesheet" href="edition-controls.css?v=3">'
-    frozen_styles='<link rel="stylesheet" href="themes/'+design["theme"]+'.css"><link rel="stylesheet" href="edition-controls.css?v=3">'
+    marker='<script src="publication-config.js?v=3"></script><script src="edition-engine.js?v=4"></script><link rel="stylesheet" href="edition-controls.css?v=4">'
+    frozen_styles='<link rel="stylesheet" href="themes/'+design["theme"]+'.css"><link rel="stylesheet" href="edition-controls.css?v=4">'
     target.mkdir(parents=True)
     try:
         for page in PAGES:

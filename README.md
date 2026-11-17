@@ -70,7 +70,7 @@ The Vice City Gazette is the new staging default, translating the approved illus
 
 ## Reference-faithful Gazette update
 
-The Gazette staging theme now uses artwork cropped directly from the approved user-supplied newspaper reference, stored under assets/mockup/ as self-contained image SVG wrappers. This is not a screenshot of the whole page. The masthead is a single illustrative logo asset; all real story headlines, navigation, body copy, classifications, links, articles and the archive remain genuine HTML content. Featured editorial, hair-metal, identity and fictional hotel illustrations match the reference artwork; original photography and article content remain available on their corresponding article pages.
+The Gazette staging theme now uses artwork cropped directly from the approved user-supplied newspaper reference, stored under assets/mockup/ as optimized JPEG files. This is not a screenshot of the whole page. The masthead is a single illustrative logo asset; all real story headlines, navigation, body copy, classifications, links, articles and the archive remain genuine HTML content. Featured editorial, hair-metal, identity and fictional hotel illustrations match the reference artwork; original photography and article content remain available on their corresponding article pages.
 
 Do not backdate real article publication dates to match the mockup's fictional historical look. The edition date stays current in live HTML, while the imported masthead and typography establish the period design. Other site themes and the Design Desk / Art Vault are untouched.
 

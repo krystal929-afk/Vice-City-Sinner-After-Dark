@@ -23,8 +23,8 @@ window.VCS_ART_SLOTS = [
   {
     "id": "index-classified",
     "page": "index.html",
-    "label": "Bellwether Rooms advertisement artwork",
-    "src": "assets/mockup/bellwether.jpg",
+    "label": "The Strange Desk optional artwork",
+    "src": "",
     "kind": "decoration"
   },
   {
@@ -65,7 +65,7 @@ window.VCS_ART_SLOTS = [
   {
     "id": "notices-illustration",
     "page": "notices.html",
-    "label": "Municipal survey illustration",
+    "label": "The Strange Desk featured illustration",
     "src": "",
     "kind": "decoration"
   },

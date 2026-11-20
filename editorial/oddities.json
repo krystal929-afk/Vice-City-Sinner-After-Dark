@@ -1,0 +1,50 @@
+{
+  "desk": "THE STRANGE DESK",
+  "curated_as_of": "2026-11-20",
+  "editorial_rules": {
+    "recent_max_days": 60,
+    "historical_preferred_before": 1960,
+    "geography": "South Florida including Miami-Dade, Broward, Monroe, Palm Beach and the Everglades",
+    "verification": "Every clipping requires source link, event date and careful attribution; alleged crimes must be attributed to reporting or authorities",
+    "no_fictional_notices": true,
+    "no_auto_publish": true
+  },
+  "stories": [
+    {
+      "id": "rosie",
+      "year": 1927,
+      "event_date": "1927-05-20",
+      "label": "MAY 20, 1927 / MIAMI BEACH / ARCHIVAL",
+      "headline": "AN ELEPHANT SERVED AS A GOLF TEE IN MIAMI BEACH",
+      "summary": "A State Archives photograph shows Rosie the elephant being used as a golf tee. Yes, an actual golfer, on an actual elephant, in Miami Beach.",
+      "source_name": "State Archives of Florida · Florida Memory",
+      "url": "https://www.floridamemory.com/items/show/25689",
+      "tag": "historical",
+      "place": "Miami Beach"
+    },
+    {
+      "id": "birds",
+      "year": 2026,
+      "event_date": "2026-10-06",
+      "label": "OCT 6, 2026 / MIAMI INTERNATIONAL AIRPORT",
+      "headline": "CUSTOMS OFFICERS FOUND TEN LIVE SONGBIRDS IN A PASSENGER’S UNDERWEAR",
+      "summary": "According to a federal complaint reported by NBC 6, officers found the birds in plastic tubes sewn into a passenger’s underwear after a flight from Cuba.",
+      "source_name": "NBC 6 South Florida · October 6, 2026",
+      "url": "https://www.nbcmiami.com/news/local/man-returning-from-cuba-arrested-at-mia-after-smuggling-10-birds-in-his-pants-report-says/3869243/",
+      "tag": "recent",
+      "place": "Miami"
+    },
+    {
+      "id": "keys",
+      "year": 2026,
+      "event_date": "2026-10-02",
+      "label": "OCT 2, 2026 / KEY LARGO",
+      "headline": "TOM THE CAT, WEARING SUNGLASSES, APPEARED ON A BRICK OF COCAINE",
+      "summary": "Monroe County deputies reported a package found in mangroves near John Pennekamp Coral Reef State Park. It featured a cartoon cat in sunglasses. Other recovered packages bore the number 333.",
+      "source_name": "Miami Herald reporting · October 2–3, 2026",
+      "url": "https://www.aol.com/articles/tom-jerry-stamped-kilo-cocaine-002833000.html",
+      "tag": "recent",
+      "place": "Key Largo"
+    }
+  ]
+}

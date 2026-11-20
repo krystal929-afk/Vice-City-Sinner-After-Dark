@@ -37,7 +37,7 @@ Do not run the release command for an unapproved issue. It refuses to overwrite 
 
 ## Editorial boundaries
 
-Fictional classifieds, unusual notices and recurring narrative clues are intentional fictional atmosphere. Real articles, dates, original photography and interview subjects remain factual and independent of themes.
+The Strange Desk publishes only verified unusual South Florida history or genuinely recent news, each with dates and original source links. No fictional local news, municipal notices, or invented addresses are published in this section. Real articles and interview subjects remain factual.
 
 ## Status
 
@@ -75,3 +75,11 @@ The Gazette staging theme now uses artwork cropped directly from the approved us
 Do not backdate real article publication dates to match the mockup's fictional historical look. The edition date stays current in live HTML, while the imported masthead and typography establish the period design. Other site themes and the Design Desk / Art Vault are untouched.
 
 This is the staging site only; vicecitysinner.com was not edited.
+
+## The Strange Desk / edition November 2026
+
+The visible former Pelican Row fiction has been replaced with fully sourced reports on the front page and notices.html. The original fictional art asset remains in repository history and is no longer displayed. The Art Vault retains optional illustration slots without altering real reporting.
+
+Current selection: Rosie the elephant being used as a golf tee in Miami Beach on May 20, 1927 (Florida State Archives); alleged discovery of 10 live songbirds sewn into underwear at Miami International Airport, reported October 6, 2026 (NBC 6 South Florida); Tom the Cat-stamped cocaine package found in Key Largo mangroves October 2, 2026 (Miami Herald reporting). Read editorial/oddities.json for event dates, attribution and source URLs.
+
+Editorial filter: South Florida only; genuinely recent stories (within 60 days of the issue) or legitimately archival history (preferably pre-1960). Source links and factual attribution are mandatory. Do not publish older filler as new news, misrepresent allegations as convictions, or invent lore to fill space. This desk is manually curated per edition; it is NOT an auto-updating news feed. Check freshness and citations again before production release.

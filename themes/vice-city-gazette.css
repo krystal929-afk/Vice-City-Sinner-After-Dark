@@ -704,3 +704,16 @@ html[data-vcs-theme="vice-city-gazette"] .archive-new-issue .archive-image img{
  html[data-vcs-theme="vice-city-gazette"] .november-story-nav{display:block}
  html[data-vcs-theme="vice-city-gazette"] .november-story-nav a{display:block;margin:7px 0}
 }
+
+/* November proof mobile QA: keep all navigation destinations visible, no offscreen clipping. */
+@media(max-width:680px){
+ html[data-vcs-theme="vice-city-gazette"] .paper-nav{
+   display:flex!important;flex-wrap:wrap!important;justify-content:center!important;
+   gap:8px 15px!important;overflow:visible!important;
+   padding:10px 0!important;white-space:normal!important
+ }
+ html[data-vcs-theme="vice-city-gazette"] .paper-nav a{
+   white-space:nowrap;font-size:11px!important;line-height:1.35!important
+ }
+ html[data-vcs-theme="vice-city-gazette"] .november-folio span{white-space:normal}
+}

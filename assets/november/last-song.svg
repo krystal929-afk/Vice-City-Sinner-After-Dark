@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1120" role="img" aria-hidden="true"><defs>
+ <linearGradient id="night" x2=".85" y2="1"><stop stop-color="#111922"/><stop offset=".55" stop-color="#1d1824"/><stop offset="1" stop-color="#45243f"/></linearGradient>
+ <linearGradient id="pink" x2="0.9" y2="1"><stop stop-color="#e49aa7"/><stop offset=".65" stop-color="#b06e90"/><stop offset="1" stop-color="#622c50"/></linearGradient>
+ <linearGradient id="blue" x2="0" y2="1"><stop stop-color="#85b2a9"/><stop offset=".65" stop-color="#416e78"/><stop offset="1" stop-color="#182a38"/></linearGradient>
+ <pattern id="dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r=".8" fill="#efd8b6" opacity=".25"/></pattern>
+ <pattern id="hatch" width="11" height="11" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><path d="M0 0v11" stroke="#efd7b6" stroke-width="1" opacity=".22"/></pattern>
+ <filter id="rough"><feTurbulence baseFrequency=".013" numOctaves="2" seed="4" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="4"/></filter>
+ <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".52" numOctaves="3" seed="5" result="n"/><feColorMatrix in="n" type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".11"/></feComponentTransfer></filter>
+ <clipPath id="frame"><rect x="18" y="18" width="864" height="1084"/></clipPath>
+ </defs>
+ <rect width="900" height="1120" fill="#e9d8ba"/><rect x="11" y="11" width="878" height="1098" fill="url(#night)" stroke="#38282f" stroke-width="5"/>
+ <g clip-path="url(#frame)">
+<path d="M0 0h900v1120H0z" fill="#111b26"/>
+<path d="M0 175l900 391M0 510l900-281M0 775l900-250" stroke="#a45b7d" stroke-width="19" opacity=".28"/>
+<circle cx="448" cy="350" r="190" fill="#c9a3ac" opacity=".27"/>
+<!-- nightclub decor, graphic glowing exit -->
+<path d="M270 1020V210h425v810" stroke="#d6b49b" stroke-width="14" fill="none"/>
+<path d="M297 1020V235h371v785" fill="#2d2435" stroke="#6e5365" stroke-width="12"/>
+<path d="M356 1000V312h255v688" fill="#4b364a" stroke="#dcaa9a" stroke-width="6"/>
+<path d="M356 1000l255-140V312l-255 0" fill="#182937" stroke="#d4a2a2" stroke-width="7"/>
+<path d="M416 1000V333l153-10v597z" fill="url(#blue)" stroke="#ba7990" stroke-width="4"/>
+<path d="M426 1010l127-94M435 860l115-52M435 703l115-48" stroke="#f5d3ae" stroke-width="12" opacity=".2"/>
+<rect x="370" y="254" width="230" height="64" fill="#e4d7b8" stroke="#b96980" stroke-width="9"/>
+<path d="M406 290h158" stroke="#34252b" stroke-width="9"/>
+<path d="M451 0v92" stroke="#d8c2a8" stroke-width="6"/>
+<circle cx="451" cy="127" r="77" fill="#e4c6aa" stroke="#be7892" stroke-width="11"/>
+<g stroke="#7c6573" stroke-width="3"><path d="M380 115h143M381 142h141M450 53v147M407 76l89 99M496 75l-93 100"/></g>
+<!-- departing illustrated silhouette, escaping the crowd -->
+<circle cx="495" cy="675" r="50" fill="#d0a08f" stroke="#201d29" stroke-width="9"/>
+<path d="M449 670q-33-82 45-102 67 5 51 92l-30-25-36 17z" fill="#1b1a26" stroke="#b87d95" stroke-width="7"/>
+<path d="M449 724q72-37 105 14l49 208-205 12z" fill="#1a1a28" stroke="#a75f83" stroke-width="8"/>
+<path d="M445 769l-85 110M556 779l90 93" stroke="#d2a595" stroke-width="22" stroke-linecap="round"/>
+<path d="M445 950l-23 144M555 950l27 144" stroke="#1d1b2b" stroke-width="41" stroke-linecap="round"/>
+<!-- public crowd silhouettes left of door -->
+<circle cx="131" cy="785" r="65" fill="#171724"/><path d="M25 1098q-12-310 101-263 113-30 145 263" fill="#171724"/>
+<circle cx="802" cy="835" r="59" fill="#171724"/><path d="M680 1098q0-258 122-223 115 0 108 223" fill="#171724"/>
+<path d="M0 1060h900" stroke="#b36f8a" stroke-width="13"/>
+</g>
+ <rect x="20" y="20" width="860" height="1080" fill="none" stroke="#b06e90" stroke-width="4" opacity=".65"/>
+ <path d="M39 43h180M681 43h180M39 1077h180M681 1077h180" stroke="#e3c6a7" stroke-width="2" opacity=".7"/>
+ <rect width="900" height="1120" filter="url(#grain)" opacity=".7" pointer-events="none"/>
+ </svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1120" role="img" aria-hidden="true"><defs>
+ <linearGradient id="night" x2=".85" y2="1"><stop stop-color="#111922"/><stop offset=".55" stop-color="#1d1824"/><stop offset="1" stop-color="#45243f"/></linearGradient>
+ <linearGradient id="pink" x2="0.9" y2="1"><stop stop-color="#e49aa7"/><stop offset=".65" stop-color="#94566e"/><stop offset="1" stop-color="#622c50"/></linearGradient>
+ <linearGradient id="blue" x2="0" y2="1"><stop stop-color="#85b2a9"/><stop offset=".65" stop-color="#416e78"/><stop offset="1" stop-color="#182a38"/></linearGradient>
+ <pattern id="dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r=".8" fill="#efd8b6" opacity=".25"/></pattern>
+ <pattern id="hatch" width="11" height="11" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><path d="M0 0v11" stroke="#efd7b6" stroke-width="1" opacity=".22"/></pattern>
+ <filter id="rough"><feTurbulence baseFrequency=".013" numOctaves="2" seed="4" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="4"/></filter>
+ <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".52" numOctaves="3" seed="5" result="n"/><feColorMatrix in="n" type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".11"/></feComponentTransfer></filter>
+ <clipPath id="frame"><rect x="18" y="18" width="864" height="1084"/></clipPath>
+ </defs>
+ <rect width="900" height="1120" fill="#e9d8ba"/><rect x="11" y="11" width="878" height="1098" fill="url(#night)" stroke="#38282f" stroke-width="5"/>
+ <g clip-path="url(#frame)">
+<path d="M0 805L900 594v526H0z" fill="#221a27"/>
+<circle cx="444" cy="369" r="285" fill="none" stroke="#a15b79" stroke-width="23"/>
+<circle cx="444" cy="369" r="241" fill="none" stroke="#e7bfa0" stroke-width="3" stroke-dasharray="7 9"/>
+<path d="M115 1120V295l98-134 93 134v825M601 1120V295l98-134 93 134v825" fill="#11151e" stroke="#5d6071" stroke-width="10"/>
+<path d="M162 284q48-85 96 0M650 284q48-85 96 0" stroke="#d8b4a5" stroke-width="11" fill="none"/>
+<path d="M177 330v720M263 330v720M665 330v720M751 330v720" stroke="#6d5261" stroke-width="7"/>
+<path d="M80 990q170-61 317-38T812 981" stroke="#7d566b" stroke-width="25" fill="none"/>
+<!-- Aristocratic silhouette in black, beautiful not frightening -->
+<path d="M323 650q-95 125-139 389h513q-54-291-132-389l-90-61z" fill="#101119" stroke="#af8392" stroke-width="10"/>
+<path d="M318 714q102 154 126 324m112-310q-106 174-111 316" fill="none" stroke="#38283c" stroke-width="22"/>
+<path d="M391 589q-37 66-71 114m207-111q48 51 78 112" stroke="#d2a39a" stroke-width="29" stroke-linecap="round"/>
+<path d="M381 639l67 90 74-92" fill="none" stroke="#e3c2ac" stroke-width="12"/>
+<circle cx="453" cy="425" r="100" fill="#cea49a" stroke="#1b1720" stroke-width="9"/>
+<path d="M352 454Q290 280 416 264q127-47 180 135l-37 23-11-75-41 28-73-35-73 116z" fill="#15131c" stroke="#a66081" stroke-width="9"/>
+<path d="M340 436q-26 124 16 207l68-78m146-153q42 145-10 229l-45-63" fill="#14131c" stroke="#a66081" stroke-width="9"/>
+<path d="M406 454q26-22 49-1m23 2q22-25 50-5" stroke="#231923" stroke-width="7" fill="none"/>
+<path d="M416 511q31 24 67-3" stroke="#85405d" stroke-width="8" fill="none"/>
+<path d="M449 568l-23 43 24 46 26-46z" fill="#e0c0b0" stroke="#e0c0b0" stroke-width="4"/>
+<g fill="#a75d77" stroke="#1b1c28" stroke-width="4"><circle cx="208" cy="808" r="44"/><circle cx="258" cy="824" r="33"/><circle cx="685" cy="815" r="47"/><circle cx="634" cy="828" r="32"/></g>
+<g stroke="#c4869d" stroke-width="5" fill="none"><path d="M210 1000l-22-193m24 88 45-69M684 1000l23-192m-24 91-50-71"/></g>
+</g>
+ <rect x="20" y="20" width="860" height="1080" fill="none" stroke="#94566e" stroke-width="4" opacity=".65"/>
+ <path d="M39 43h180M681 43h180M39 1077h180M681 1077h180" stroke="#e3c6a7" stroke-width="2" opacity=".7"/>
+ <rect width="900" height="1120" filter="url(#grain)" opacity=".7" pointer-events="none"/>
+ </svg>

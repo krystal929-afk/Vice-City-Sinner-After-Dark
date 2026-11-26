@@ -1,33 +1,5 @@
 window.VCS_ART_SLOTS = [
   {
-    "id": "index-1",
-    "page": "index.html",
-    "label": "Mr. Satan photographed for the original Hoochie Daddy feature",
-    "src": "assets/hoochie-daddy-satanica-web.webp",
-    "kind": "image"
-  },
-  {
-    "id": "index-2",
-    "page": "index.html",
-    "label": "Original photograph of Satanica Lux at dusk for the Foxhole editorial",
-    "src": "assets/mockup/hero.jpg",
-    "kind": "image"
-  },
-  {
-    "id": "index-3",
-    "page": "index.html",
-    "label": "Original fashion portrait for the hair metal article",
-    "src": "assets/mockup/hair.jpg",
-    "kind": "image"
-  },
-  {
-    "id": "index-classified",
-    "page": "index.html",
-    "label": "The Strange Desk optional artwork",
-    "src": "",
-    "kind": "decoration"
-  },
-  {
     "id": "archive-1",
     "page": "archive.html",
     "label": "Photograph accompanying The Hoochie Daddy Has Historical Precedent",
@@ -210,10 +182,108 @@ window.VCS_ART_SLOTS = [
     "kind": "image"
   },
   {
-    "id": "index-identity",
+    "id": "nov-home-sidewalk",
     "page": "index.html",
-    "label": "Identity feature photograph",
-    "src": "assets/mockup/identity-clean.jpg",
+    "label": "The Sidewalk Is Not a Diagnosis / original illustrated art",
+    "src": "assets/november/sidewalk.svg",
+    "kind": "image"
+  },
+  {
+    "id": "nov-archive-sidewalk",
+    "page": "archive.html",
+    "label": "The Sidewalk Is Not a Diagnosis / original illustrated art",
+    "src": "assets/november/sidewalk.svg",
+    "kind": "image"
+  },
+  {
+    "id": "sidewalk-1",
+    "page": "sidewalk.html",
+    "label": "The Sidewalk Is Not a Diagnosis / original illustrated art",
+    "src": "assets/november/sidewalk.svg",
+    "kind": "image"
+  },
+  {
+    "id": "nov-home-mullet",
+    "page": "index.html",
+    "label": "The Rise and Fall… and Rise of the Mullet / original illustrated art",
+    "src": "assets/november/mullet.svg",
+    "kind": "image"
+  },
+  {
+    "id": "nov-archive-mullet",
+    "page": "archive.html",
+    "label": "The Rise and Fall… and Rise of the Mullet / original illustrated art",
+    "src": "assets/november/mullet.svg",
+    "kind": "image"
+  },
+  {
+    "id": "mullet-1",
+    "page": "mullet.html",
+    "label": "The Rise and Fall… and Rise of the Mullet / original illustrated art",
+    "src": "assets/november/mullet.svg",
+    "kind": "image"
+  },
+  {
+    "id": "nov-home-black",
+    "page": "index.html",
+    "label": "Black Is Not a Phase / original illustrated art",
+    "src": "assets/november/black.svg",
+    "kind": "image"
+  },
+  {
+    "id": "nov-archive-black",
+    "page": "archive.html",
+    "label": "Black Is Not a Phase / original illustrated art",
+    "src": "assets/november/black.svg",
+    "kind": "image"
+  },
+  {
+    "id": "black-1",
+    "page": "black-is-not-a-phase.html",
+    "label": "Black Is Not a Phase / original illustrated art",
+    "src": "assets/november/black.svg",
+    "kind": "image"
+  },
+  {
+    "id": "nov-home-last-song",
+    "page": "index.html",
+    "label": "You Can Leave Before the Last Song / original illustrated art",
+    "src": "assets/november/last-song.svg",
+    "kind": "image"
+  },
+  {
+    "id": "nov-archive-last-song",
+    "page": "archive.html",
+    "label": "You Can Leave Before the Last Song / original illustrated art",
+    "src": "assets/november/last-song.svg",
+    "kind": "image"
+  },
+  {
+    "id": "last-song-1",
+    "page": "last-song.html",
+    "label": "You Can Leave Before the Last Song / original illustrated art",
+    "src": "assets/november/last-song.svg",
+    "kind": "image"
+  },
+  {
+    "id": "nov-home-genx",
+    "page": "index.html",
+    "label": "Gen X vs. Millennials: A Generational Death Match / original illustrated art",
+    "src": "assets/november/genx.svg",
+    "kind": "image"
+  },
+  {
+    "id": "nov-archive-genx",
+    "page": "archive.html",
+    "label": "Gen X vs. Millennials: A Generational Death Match / original illustrated art",
+    "src": "assets/november/genx.svg",
+    "kind": "image"
+  },
+  {
+    "id": "genx-1",
+    "page": "genx-millennials.html",
+    "label": "Gen X vs. Millennials: A Generational Death Match / original illustrated art",
+    "src": "assets/november/genx.svg",
     "kind": "image"
   }
 ];

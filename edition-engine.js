@@ -39,7 +39,7 @@ root.style.setProperty("--vcs-accent",active.accent);
 root.style.setProperty("color-scheme",["black-letter","velvet-vice","acid-riviera"].includes(theme)?"dark":"light");
 const link=document.createElement("link");
 link.rel="stylesheet";
-link.href=knownThemes[theme].css+"?v=6";
+link.href=knownThemes[theme].css+"?v=7";
 link.setAttribute("data-vcs-theme-css","");
 document.head.appendChild(link);
 window.VCS_EDITION={

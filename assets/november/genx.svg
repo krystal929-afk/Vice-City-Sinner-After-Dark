@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1120" role="img" aria-hidden="true"><defs>
+ <linearGradient id="night" x2=".85" y2="1"><stop stop-color="#111922"/><stop offset=".55" stop-color="#1d1824"/><stop offset="1" stop-color="#45243f"/></linearGradient>
+ <linearGradient id="pink" x2="0.9" y2="1"><stop stop-color="#e49aa7"/><stop offset=".65" stop-color="#b66a80"/><stop offset="1" stop-color="#622c50"/></linearGradient>
+ <linearGradient id="blue" x2="0" y2="1"><stop stop-color="#85b2a9"/><stop offset=".65" stop-color="#416e78"/><stop offset="1" stop-color="#182a38"/></linearGradient>
+ <pattern id="dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r=".8" fill="#efd8b6" opacity=".25"/></pattern>
+ <pattern id="hatch" width="11" height="11" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><path d="M0 0v11" stroke="#efd7b6" stroke-width="1" opacity=".22"/></pattern>
+ <filter id="rough"><feTurbulence baseFrequency=".013" numOctaves="2" seed="4" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="4"/></filter>
+ <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".52" numOctaves="3" seed="5" result="n"/><feColorMatrix in="n" type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".11"/></feComponentTransfer></filter>
+ <clipPath id="frame"><rect x="18" y="18" width="864" height="1084"/></clipPath>
+ </defs>
+ <rect width="900" height="1120" fill="#e9d8ba"/><rect x="11" y="11" width="878" height="1098" fill="url(#night)" stroke="#38282f" stroke-width="5"/>
+ <g clip-path="url(#frame)">
+<circle cx="444" cy="308" r="242" fill="#b16b86" opacity=".45"/>
+<path d="M0 565l900 0M0 630l900 0" stroke="#e3c1ad" stroke-width="14"/>
+<path d="M450 0v1120" stroke="#d9baaa" stroke-width="7" stroke-dasharray="17 16" opacity=".65"/>
+<path d="M0 885l900-240v475H0z" fill="#201a2b"/>
+<!-- old television -->
+<rect x="78" y="160" width="275" height="238" rx="23" fill="#c79f8b" stroke="#21202a" stroke-width="15"/>
+<rect x="107" y="193" width="180" height="160" rx="34" fill="url(#blue)" stroke="#252332" stroke-width="13"/>
+<path d="M120 221l144 108M119 333l144-105" stroke="#c3d3c2" stroke-width="12" opacity=".45"/>
+<circle cx="316" cy="251" r="14" fill="#35272b"/><circle cx="316" cy="297" r="14" fill="#35272b"/>
+<path d="M133 155l-36-58m90 58 56-74" stroke="#d9bba0" stroke-width="10"/>
+<!-- phone -->
+<rect x="594" y="125" width="240" height="315" rx="38" fill="#1c1c29" stroke="#d8b7aa" stroke-width="17"/>
+<rect x="615" y="167" width="198" height="226" rx="10" fill="#445e72"/>
+<rect x="634" y="193" width="164" height="80" fill="#bb7188"/><path d="M636 294h154M636 322h154M636 350h92" stroke="#e5cdbb" stroke-width="14"/>
+<!-- ring corners -->
+<path d="M90 830h720M70 906h760M44 987h815" stroke="#a46d89" stroke-width="13"/>
+<path d="M65 818v302M832 817v303" stroke="#d6baa4" stroke-width="24"/>
+<!-- Gen X person -->
+<circle cx="270" cy="602" r="79" fill="#cfa293" stroke="#26202a" stroke-width="9"/>
+<path d="M188 591q-2-137 87-117 105 0 81 138l-42-42-75-7-43 47z" fill="#1a1b26" stroke="#e2b1a7" stroke-width="8"/>
+<path d="M173 697q110-50 196 4l43 313H118z" fill="#253342" stroke="#b5738a" stroke-width="8"/>
+<path d="M201 594h56m60 0h50" stroke="#1d1a25" stroke-width="12"/><path d="M257 609h56" stroke="#1d1a25" stroke-width="8"/>
+<!-- Millennial -->
+<circle cx="626" cy="608" r="76" fill="#d4a596" stroke="#2a1e2a" stroke-width="9"/>
+<path d="M548 605q-36-133 57-136 98-22 102 138l-45-24-88-21z" fill="#241c2b" stroke="#ba6586" stroke-width="10"/>
+<path d="M532 701q101-57 190 5l48 308H477z" fill="#402541" stroke="#c77e9a" stroke-width="9"/>
+<path d="M595 646q29 15 63-5" stroke="#8b4666" stroke-width="9" fill="none"/>
+<path d="M184 800l-135 54m320-59 100 63M530 806l-109 53m308-58 115 63" stroke="#d3a296" stroke-width="29" stroke-linecap="round"/>
+<g fill="#ce6f8a" stroke="#1a1b28" stroke-width="8"><circle cx="50" cy="862" r="46"/><circle cx="465" cy="860" r="45"/><circle cx="435" cy="857" r="42"/><circle cx="843" cy="863" r="46"/></g>
+</g>
+ <rect x="20" y="20" width="860" height="1080" fill="none" stroke="#b66a80" stroke-width="4" opacity=".65"/>
+ <path d="M39 43h180M681 43h180M39 1077h180M681 1077h180" stroke="#e3c6a7" stroke-width="2" opacity=".7"/>
+ <rect width="900" height="1120" filter="url(#grain)" opacity=".7" pointer-events="none"/>
+ </svg>

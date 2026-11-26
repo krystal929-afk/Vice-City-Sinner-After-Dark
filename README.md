@@ -83,3 +83,15 @@ The visible former Pelican Row fiction has been replaced with fully sourced repo
 Current selection: Rosie the elephant being used as a golf tee in Miami Beach on May 20, 1927 (Florida State Archives); alleged discovery of 10 live songbirds sewn into underwear at Miami International Airport, reported October 6, 2026 (NBC 6 South Florida); Tom the Cat-stamped cocaine package found in Key Largo mangroves October 2, 2026 (Miami Herald reporting). Read editorial/oddities.json for event dates, attribution and source URLs.
 
 Editorial filter: South Florida only; genuinely recent stories (within 60 days of the issue) or legitimately archival history (preferably pre-1960). Source links and factual attribution are mandatory. Do not publish older filler as new news, misrepresent allegations as convictions, or invent lore to fill space. This desk is manually curated per edition; it is NOT an auto-updating news feed. Check freshness and citations again before production release.
+
+
+## November 2026 new issue / STAGING PROOF
+
+Five complete, copyedited editorial articles were built from the November 18 manuscript. Full copy including research trail and homelessness resources lives in new stand-alone HTML pages:
+sidewalk.html, mullet.html, black-is-not-a-phase.html, last-song.html, genx-millennials.html.
+
+The lead story is "The Sidewalk Is Not a Diagnosis." The front page is redesigned around this and the other four articles with a darker oxblood, plum, faded teal and aged paper treatment. Article headlines now use sturdy, readable Georgia rather than extreme stretched decorative Bodoni. The existing ornate, approved masthead artwork remains intact. New proof illustrations are original vector artworks, not photographs of invented real individuals. No source photo of any real person was changed.
+
+The Art Vault recognizes all five new article covers, five front-page placements and five archive thumbnails, and earlier stories still live in the archive. Current November pages are strictly preview/staging, with noindex,nofollow. Article dates are month-only until a release date is approved. The production vicecitysinner.com domain is untouched.
+
+For status and editorial issue metadata see editorial/november-2026.json. Do not freeze or register this issue as publicly published until approved. The Strange Desk remains sourced real South Florida oddities.

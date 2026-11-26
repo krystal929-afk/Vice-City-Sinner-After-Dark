@@ -1,0 +1,52 @@
+{
+  "edition": "November 2026",
+  "status": "staging_proof_not_published",
+  "source": "Vice_City_Sinner_Five_Articles_Copyedited.docx (November 18, 2026)",
+  "artwork_status": "five original illustrative proof artworks; replace or approve individually through Art Vault",
+  "date_precision": "month only; no fabricated per-story publication dates",
+  "article_count": 5,
+  "articles": [
+    {
+      "title": "The Sidewalk Is Not a Diagnosis",
+      "slug": "sidewalk",
+      "url": "sidewalk.html",
+      "category": "SOCIETY / CITIES",
+      "wordcount": 1778,
+      "artwork": "assets/november/sidewalk.svg"
+    },
+    {
+      "title": "The Rise and Fall… and Rise of the Mullet",
+      "slug": "mullet",
+      "url": "mullet.html",
+      "category": "STYLE / CULTURE",
+      "wordcount": 1490,
+      "artwork": "assets/november/mullet.svg"
+    },
+    {
+      "title": "Black Is Not a Phase",
+      "slug": "black",
+      "url": "black-is-not-a-phase.html",
+      "category": "STYLE / IDENTITY",
+      "wordcount": 681,
+      "artwork": "assets/november/black.svg"
+    },
+    {
+      "title": "You Can Leave Before the Last Song",
+      "slug": "last-song",
+      "url": "last-song.html",
+      "category": "CULTURE / NIGHTLIFE",
+      "wordcount": 632,
+      "artwork": "assets/november/last-song.svg"
+    },
+    {
+      "title": "Gen X vs. Millennials: A Generational Death Match",
+      "slug": "genx",
+      "url": "genx-millennials.html",
+      "category": "CULTURE / HUMOR",
+      "wordcount": 1468,
+      "artwork": "assets/november/genx.svg"
+    }
+  ],
+  "preservation": "five previously published original stories remain accessible in the article archive",
+  "release_policy": "staging only; do not deploy to vicecitysinner.com without explicit approval"
+}

@@ -1108,3 +1108,26 @@ html[data-vcs-theme="vice-city-gazette"] .archive-new-issue .archive-image img{
  html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lead-art img,
  html[data-vcs-theme="vice-city-gazette"] .vcs-v3-card-art img{transition:none}
 }
+
+/* Browser QA: story art sits with its headline, not stranded at the foot of a tall column. */
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-feature-grid .vcs-v3-card{
+ justify-content:flex-start!important
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-feature-grid .vcs-v3-card-art{
+ margin-top:10px!important
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-feature-grid .vcs-v3-card-art img{
+ height:clamp(250px,25vw,355px)!important;
+ object-position:center 22%!important
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-feature-grid .vcs-v3-card .vcs-v3-cta{
+ margin-top:15px!important
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-card-ink .vcs-v3-deck{
+ margin-bottom:7px!important
+}
+@media(max-width:540px){
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-feature-grid .vcs-v3-card-art img{
+  height:295px!important
+ }
+}

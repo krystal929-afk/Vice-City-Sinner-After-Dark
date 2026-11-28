@@ -95,3 +95,9 @@ The lead story is "The Sidewalk Is Not a Diagnosis." The front page is redesigne
 The Art Vault recognizes all five new article covers, five front-page placements and five archive thumbnails, and earlier stories still live in the archive. Current November pages are strictly preview/staging, with noindex,nofollow. Article dates are month-only until a release date is approved. The production vicecitysinner.com domain is untouched.
 
 For status and editorial issue metadata see editorial/november-2026.json. Do not freeze or register this issue as publicly published until approved. The Strange Desk remains sourced real South Florida oddities.
+
+## November 2026 visual fidelity proof V3
+
+This visual update is the first staging-only implementation of the approved darker newspaper mockup: illustrated black masthead; oxblood print labels; warm paper story panels; high-contrast readable Georgia headlines; five cohesive original editorial paintings. CSS uses the existing vice-city-gazette theme and is reversible. The five original articles, existing story text, archive, Strange Desk, Design Desk and Art Vault remain intact. All new image sources are registered in artwork-slots.js and editable through the Art Vault.
+
+There is no production deployment. Do not merge this staging repository into vicecitysinner.com until the editor approves desktop/mobile layout and article imagery.

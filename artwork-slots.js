@@ -185,105 +185,105 @@ window.VCS_ART_SLOTS = [
     "id": "nov-home-sidewalk",
     "page": "index.html",
     "label": "The Sidewalk Is Not a Diagnosis / original illustrated art",
-    "src": "assets/november/sidewalk.svg",
+    "src": "assets/november/illustrated-sidewalk.jpg",
     "kind": "image"
   },
   {
     "id": "nov-archive-sidewalk",
     "page": "archive.html",
     "label": "The Sidewalk Is Not a Diagnosis / original illustrated art",
-    "src": "assets/november/sidewalk.svg",
+    "src": "assets/november/illustrated-sidewalk.jpg",
     "kind": "image"
   },
   {
     "id": "sidewalk-1",
     "page": "sidewalk.html",
     "label": "The Sidewalk Is Not a Diagnosis / original illustrated art",
-    "src": "assets/november/sidewalk.svg",
+    "src": "assets/november/illustrated-sidewalk.jpg",
     "kind": "image"
   },
   {
     "id": "nov-home-mullet",
     "page": "index.html",
     "label": "The Rise and Fall… and Rise of the Mullet / original illustrated art",
-    "src": "assets/november/mullet.svg",
+    "src": "assets/november/illustrated-mullet.jpg",
     "kind": "image"
   },
   {
     "id": "nov-archive-mullet",
     "page": "archive.html",
     "label": "The Rise and Fall… and Rise of the Mullet / original illustrated art",
-    "src": "assets/november/mullet.svg",
+    "src": "assets/november/illustrated-mullet.jpg",
     "kind": "image"
   },
   {
     "id": "mullet-1",
     "page": "mullet.html",
     "label": "The Rise and Fall… and Rise of the Mullet / original illustrated art",
-    "src": "assets/november/mullet.svg",
+    "src": "assets/november/illustrated-mullet.jpg",
     "kind": "image"
   },
   {
     "id": "nov-home-black",
     "page": "index.html",
     "label": "Black Is Not a Phase / original illustrated art",
-    "src": "assets/november/black.svg",
+    "src": "assets/november/illustrated-black.jpg",
     "kind": "image"
   },
   {
     "id": "nov-archive-black",
     "page": "archive.html",
     "label": "Black Is Not a Phase / original illustrated art",
-    "src": "assets/november/black.svg",
+    "src": "assets/november/illustrated-black.jpg",
     "kind": "image"
   },
   {
     "id": "black-1",
     "page": "black-is-not-a-phase.html",
     "label": "Black Is Not a Phase / original illustrated art",
-    "src": "assets/november/black.svg",
+    "src": "assets/november/illustrated-black.jpg",
     "kind": "image"
   },
   {
     "id": "nov-home-last-song",
     "page": "index.html",
     "label": "You Can Leave Before the Last Song / original illustrated art",
-    "src": "assets/november/last-song.svg",
+    "src": "assets/november/illustrated-last-song.jpg",
     "kind": "image"
   },
   {
     "id": "nov-archive-last-song",
     "page": "archive.html",
     "label": "You Can Leave Before the Last Song / original illustrated art",
-    "src": "assets/november/last-song.svg",
+    "src": "assets/november/illustrated-last-song.jpg",
     "kind": "image"
   },
   {
     "id": "last-song-1",
     "page": "last-song.html",
     "label": "You Can Leave Before the Last Song / original illustrated art",
-    "src": "assets/november/last-song.svg",
+    "src": "assets/november/illustrated-last-song.jpg",
     "kind": "image"
   },
   {
     "id": "nov-home-genx",
     "page": "index.html",
     "label": "Gen X vs. Millennials: A Generational Death Match / original illustrated art",
-    "src": "assets/november/genx.svg",
+    "src": "assets/november/illustrated-genx.jpg",
     "kind": "image"
   },
   {
     "id": "nov-archive-genx",
     "page": "archive.html",
     "label": "Gen X vs. Millennials: A Generational Death Match / original illustrated art",
-    "src": "assets/november/genx.svg",
+    "src": "assets/november/illustrated-genx.jpg",
     "kind": "image"
   },
   {
     "id": "genx-1",
     "page": "genx-millennials.html",
     "label": "Gen X vs. Millennials: A Generational Death Match / original illustrated art",
-    "src": "assets/november/genx.svg",
+    "src": "assets/november/illustrated-genx.jpg",
     "kind": "image"
   }
 ];

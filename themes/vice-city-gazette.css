@@ -717,3 +717,394 @@ html[data-vcs-theme="vice-city-gazette"] .archive-new-issue .archive-image img{
  }
  html[data-vcs-theme="vice-city-gazette"] .november-folio span{white-space:normal}
 }
+
+
+/* ================================================================
+  VCS / MASTER REFERENCE EDITION · DARK EDITORIAL REBUILD V3
+  Follows the user-approved black masthead and cream newspaper panel
+  mockup. Real HTML, actual five articles, no flat page screenshots.
+================================================================ */
+html[data-vcs-theme="vice-city-gazette"]{
+ --v3-outer:#0b090b;--v3-ink:#241d1d;--v3-cream:#eddcc3;
+ --v3-paper:#e6d5bd;--v3-line:#775c51;--v3-wine:#572739;
+ --v3-plum:#291523;--v3-rose:#bb6e83;--v3-gold:#d7ae88;
+ --v3-teal:#315761;
+}
+html[data-vcs-theme="vice-city-gazette"] body{
+ background:#090709!important;
+ background-image:radial-gradient(ellipse at 50% 0%,#332029 0%,#0b090d 65%)!important;
+}
+html[data-vcs-theme="vice-city-gazette"] .newspaper-wrap{
+ max-width:1510px!important;width:min(1510px,calc(100% - 40px))!important;
+ margin:18px auto 38px!important;background:#0c0b0d!important;
+ box-shadow:0 12px 65px #000b,0 0 0 1px #926b5b!important;
+ border:1px solid #926b5b!important;
+}
+html[data-vcs-theme="vice-city-gazette"] .newspaper-wrap::after{
+ opacity:.045!important;mix-blend-mode:screen!important;pointer-events:none;
+}
+html[data-vcs-theme="vice-city-gazette"] .paper-header{
+ padding-left:20px!important;padding-right:20px!important;
+ color:#f3e4c8!important;background:#100e10!important
+}
+html[data-vcs-theme="vice-city-gazette"] .paper-header .imprint-strip{display:none!important}
+html[data-vcs-theme="vice-city-gazette"] .paper-header .masthead{
+ display:block!important;border:0!important;min-height:0!important;
+ padding:0!important;margin:0!important;background:#0e0c0e!important;
+}
+html[data-vcs-theme="vice-city-gazette"] .masthead > :not(.reference-masthead){display:none!important}
+html[data-vcs-theme="vice-city-gazette"] .reference-masthead{
+ display:block!important;width:100%!important;line-height:0!important
+}
+html[data-vcs-theme="vice-city-gazette"] .reference-masthead img{
+ display:block!important;width:100%!important;height:auto!important;max-height:none!important;
+ object-fit:contain!important;filter:none!important;
+}
+html[data-vcs-theme="vice-city-gazette"] .paper-nav{
+ display:flex!important;flex-wrap:wrap!important;justify-content:center!important;
+ gap:0!important;border-top:1px solid #8c625a!important;
+ border-bottom:3px double #bb8d74!important;
+ padding:0!important;margin:2px 0 0!important;
+ background:#171116!important
+}
+html[data-vcs-theme="vice-city-gazette"] .paper-nav a{
+ font:700 13px/1.2 Georgia,serif!important;letter-spacing:.08em!important;
+ color:#e8d6ba!important;padding:12px 16px!important;
+ border-right:1px solid #8c665c!important;text-decoration:none!important;
+ text-transform:uppercase
+}
+html[data-vcs-theme="vice-city-gazette"] .paper-nav a:first-child{background:#57273a!important}
+html[data-vcs-theme="vice-city-gazette"] .paper-nav a:hover,
+html[data-vcs-theme="vice-city-gazette"] .paper-nav a:focus-visible{
+ background:#763e53!important;color:#fff0ce!important
+}
+html[data-vcs-theme="vice-city-gazette"] .issue-strap{
+ background:#ead9bd!important;color:#261d1c!important;
+ padding:8px 12px!important;margin:8px 0 0!important;
+ border-top:2px solid #ab8b70!important;border-bottom:4px double #503b33!important;
+ font:700 11px/1.3 Georgia,serif!important;
+ letter-spacing:.05em!important;display:grid!important;grid-template-columns:1fr 1fr 1fr!important;
+}
+html[data-vcs-theme="vice-city-gazette"] .issue-strap span:nth-child(2){text-align:center}
+html[data-vcs-theme="vice-city-gazette"] .issue-strap span:last-child{text-align:right}
+html[data-vcs-theme="vice-city-gazette"] .paper-content.vcs-v3-paper{
+ display:block!important;background:#0c0b0d!important;
+ color:var(--v3-ink)!important;
+ padding:14px 20px 18px!important;
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-paper a{
+ text-decoration:none;color:inherit;
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-paper a:hover,
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-paper a:focus-visible{
+ text-decoration:underline;text-underline-offset:3px;
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-paper .vcs-v3-issue-meta{
+ display:flex;justify-content:space-between;gap:15px;align-items:center;
+ color:#ead4b9;border-block:1px solid #876757;
+ font:700 11px/1.25 Georgia,serif;letter-spacing:.1em;
+ padding:8px 3px;margin-bottom:12px
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-feature-grid{
+ display:grid!important;
+ grid-template-columns:minmax(0,1.15fr) minmax(0,1.7fr) minmax(0,.95fr) minmax(0,.95fr)!important;
+ gap:8px!important;align-items:stretch!important;border:0!important;
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lead,
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-card{
+ min-width:0;display:flex;flex-direction:column;
+ background:var(--v3-cream)!important;
+ border:1px solid #ad8d6e!important;padding:16px!important;
+ box-shadow:inset 0 0 0 3px #eee0c8,inset 0 0 0 4px #af9179
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lead{
+ padding:24px 19px 19px!important;
+ justify-content:flex-start
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-category{
+ display:block;font:800 10px/1.25 "Barlow Condensed",Arial,sans-serif;
+ letter-spacing:.19em;color:#8d445a;margin-bottom:14px;text-transform:uppercase;
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-category i{font-style:normal;color:#786459}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lead h1{
+ font:800 clamp(1.85rem,3.1vw,4rem)/.99 Georgia,serif!important;
+ letter-spacing:-.047em!important;transform:none!important;width:auto!important;
+ text-transform:uppercase!important;margin:0 0 17px!important;hyphens:none
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lead-deck{
+ font:italic 700 clamp(1.12rem,1.38vw,1.55rem)/1.26 Georgia,serif;
+ color:#2f2825;margin:0 0 10px
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-ornament{
+ font:700 28px/1 Georgia,serif;text-align:center;color:#a85f72;
+ margin:4px 0 12px;position:relative
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-ornament::before,
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-ornament::after{
+ content:"";display:inline-block;width:23%;height:1px;background:#8d745e;
+ vertical-align:middle;margin:0 9px
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lead-summary{
+ font:15px/1.48 Georgia,serif!important;text-align:left;margin:0 0 20px
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-byline{
+ border-top:1px solid #8f735f;padding-top:10px;margin:auto 0 4px;
+ font:700 12px/1.3 Georgia,serif;letter-spacing:.025em
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-cta{
+ display:flex;justify-content:space-between;align-items:center;gap:6px;
+ color:#5d2e3c!important;border-top:1px solid #9a806b;
+ margin-top:auto;padding-top:10px;
+ font:800 12px/1.3 "Barlow Condensed",Arial,sans-serif;
+ letter-spacing:.12em;text-transform:uppercase
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-cta span{font:700 23px/1 Georgia,serif}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lead .vcs-v3-feature-link{
+ background:#572739!important;color:#ffe9cd!important;
+ padding:11px 12px!important;border:1px solid #41252d!important;margin-top:15px!important
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lead-art{
+ position:relative;display:block;overflow:hidden;min-height:575px;
+ background:#10121b;border:1px solid #ac7564
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lead-art img{
+ display:block;width:100%;height:100%;object-fit:cover;object-position:center center;
+ filter:none!important;transition:transform .4s ease
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lead-art:hover img{transform:scale(1.035)}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-art-stamp{
+ position:absolute;bottom:0;left:0;right:0;padding:9px 13px;
+ background:linear-gradient(transparent,#110b14ec);color:#f1ddc8;
+ font:700 11px "Barlow Condensed",Arial,sans-serif;letter-spacing:.1em
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-card{
+ padding:13px!important;gap:0!important
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-card h2{
+ font:800 clamp(1.37rem,1.9vw,2.35rem)/1.03 Georgia,serif!important;
+ color:#231b20!important;letter-spacing:-.037em!important;
+ margin:0 0 10px!important;text-transform:uppercase;overflow-wrap:normal
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-card .vcs-v3-deck{
+ font:italic 14px/1.4 Georgia,serif!important;margin:0 0 11px;
+ color:#332626
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-card-art{
+ display:block;overflow:hidden;margin-top:auto;border-top:1px solid #92705c;
+ border-bottom:1px solid #92705c;min-height:0
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-card-art img{
+ display:block;width:100%;height:240px;object-fit:cover;object-position:center 25%;
+ filter:none!important;transition:transform .3s ease
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-card-art:hover img{transform:scale(1.04)}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-card .vcs-v3-cta{padding-top:10px;margin-top:9px}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lower-grid{
+ display:grid!important;grid-template-columns:1.38fr 1.38fr .95fr .95fr!important;
+ gap:8px!important;padding:10px 0 0!important;border:0!important
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lower-grid .vcs-v3-card{min-height:340px}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lower-grid .vcs-v3-card{
+ display:grid;grid-template-columns:1.03fr 1fr;grid-template-rows:1fr auto;
+ column-gap:11px;align-items:stretch
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lower-grid .vcs-v3-card .vcs-v3-card-ink{
+ grid-column:1;grid-row:1;min-width:0
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lower-grid .vcs-v3-card .vcs-v3-card-art{
+ grid-column:2;grid-row:1;align-self:stretch;margin-top:0;border:0
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lower-grid .vcs-v3-card .vcs-v3-card-art img{
+ width:100%;height:100%;min-height:268px;object-fit:cover
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lower-grid .vcs-v3-card .vcs-v3-cta{
+ grid-column:1/-1;grid-row:2;margin-top:12px
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lower-grid .vcs-v3-card h2{
+ font-size:clamp(1.25rem,1.5vw,1.92rem)!important
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-strange,
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-subscribe{
+ min-width:0;display:flex;flex-direction:column;align-items:flex-start;
+ background:#171013;color:#f0dec6;border:2px double #c99b82;
+ padding:16px 13px;position:relative;overflow:hidden
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-strange::after,
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-subscribe::after{
+ content:"";position:absolute;inset:6px;pointer-events:none;
+ border:1px solid #b084744d
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-strange .vcs-v3-category,
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-subscribe .vcs-v3-category{color:#cb9e8d}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-strange h2,
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-subscribe h2{
+ font:800 clamp(1.4rem,2.05vw,2.65rem)/1 Georgia,serif!important;
+ letter-spacing:-.04em!important;color:#fae9d4!important;
+ text-transform:uppercase;margin:0 0 16px!important
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-strange p,
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-subscribe p{
+ font:italic 14px/1.4 Georgia,serif;margin:0 0 18px;
+ color:#ead1bb
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-mini-seal{
+ font:700 50px/.9 Georgia,serif;color:#b46b82;margin:5px auto 13px;
+ align-self:center
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-strange-link,
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-subscribe a{
+ font:800 11px/1.3 "Barlow Condensed",Arial,sans-serif!important;
+ letter-spacing:.1em;color:#f6d7b3!important;
+ border:1px solid #af8570;padding:9px 11px;align-self:stretch;text-align:center;
+ margin-top:auto
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-strange-bottom{
+ text-align:center;align-self:stretch;border-top:1px solid #9d7966;
+ padding:11px 0 0;margin-top:17px;font:700 11px Georgia,serif;letter-spacing:.14em
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-subscribe{
+ background:#100c10
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-subscribe::before{
+ content:"✺";font:700 85px Georgia,serif;opacity:.15;position:absolute;right:-8px;bottom:20px
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-issue-index{
+ margin-top:12px!important;padding:13px 5px!important;
+ border-top:3px double #bc907a!important;border-bottom:1px solid #b38b74!important;
+ color:#f3e1c7;background:transparent!important;
+ font:700 11px Georgia,serif!important
+}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-issue-index a{color:#f1d9c1!important}
+html[data-vcs-theme="vice-city-gazette"] .vcs-v3-issue-index strong{font:italic 700 17px Georgia,serif!important}
+html[data-vcs-theme="vice-city-gazette"] .paper-footer{
+ background:#0b090c!important;color:#f4e2ca!important;border-top:2px solid #a57e69!important
+}
+html[data-vcs-theme="vice-city-gazette"] .paper-footer .footer-top strong{color:#f4e2ca}
+html[data-vcs-theme="vice-city-gazette"] .paper-footer a{color:#d8b397!important}
+html[data-vcs-theme="vice-city-gazette"] .paper-footer .footer-bottom{color:#bc9d8f!important}
+/* Article pages: dramatic introduction with a readable light-paper longform body. */
+html[data-vcs-theme="vice-city-gazette"] .full-story-page.november-story{
+ background:#151015!important;color:#f5e5d2!important;
+ padding:18px 20px 45px!important
+}
+html[data-vcs-theme="vice-city-gazette"] .november-story .reading-note,
+html[data-vcs-theme="vice-city-gazette"] .november-story .article-edition-bar{
+ color:#d9af9e!important;border-color:#866253!important
+}
+html[data-vcs-theme="vice-city-gazette"] .november-story .article-hero{
+ display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1.02fr)!important;
+ gap:0!important;align-items:stretch!important;
+ background:#231721!important;border:2px double #957064!important;
+ margin:12px 0 22px!important;padding:0!important
+}
+html[data-vcs-theme="vice-city-gazette"] .november-story .article-hero-copy{
+ padding:clamp(20px,4vw,55px)!important;display:flex;flex-direction:column;justify-content:center
+}
+html[data-vcs-theme="vice-city-gazette"] .november-story .article-hero .kicker{
+ color:#d799ae!important;font:700 13px "Barlow Condensed",Arial,sans-serif!important;letter-spacing:.18em!important
+}
+html[data-vcs-theme="vice-city-gazette"] .november-story .article-hero h1{
+ color:#f0ddbf!important;font:700 clamp(2.4rem,4vw,5.3rem)/1.05 Georgia,serif!important;
+ letter-spacing:-.038em!important;text-transform:none!important;transform:none!important;width:auto!important
+}
+html[data-vcs-theme="vice-city-gazette"] .november-story .article-hero .hero-dek{
+ color:#e2c7b4!important;font:italic 21px/1.38 Georgia,serif!important
+}
+html[data-vcs-theme="vice-city-gazette"] .november-story .article-meta{color:#bfa48f!important}
+html[data-vcs-theme="vice-city-gazette"] .november-story .article-hero-image{
+ min-height:470px;background:#1a1520!important;margin:0!important
+}
+html[data-vcs-theme="vice-city-gazette"] .november-story .article-hero-image img{
+ display:block!important;width:100%!important;height:100%!important;max-height:650px!important;
+ aspect-ratio:auto!important;object-fit:cover!important;filter:none!important
+}
+html[data-vcs-theme="vice-city-gazette"] .november-story .article-body{
+ background:var(--v3-cream)!important;color:#241d1d!important;max-width:930px!important;
+ margin:0 auto!important;padding:clamp(20px,6vw,70px)!important;
+ box-shadow:0 0 0 1px #a78a6c,inset 0 0 0 9px #ebddc6!important;
+ font:18px/1.75 Georgia,serif!important
+}
+html[data-vcs-theme="vice-city-gazette"] .november-story .article-body h2{
+ font:700 clamp(1.8rem,2.2vw,2.6rem)/1.15 Georgia,serif!important;
+ letter-spacing:-.02em!important;color:#3b2432!important
+}
+html[data-vcs-theme="vice-city-gazette"] .november-story .november-story-nav{
+ max-width:930px!important;margin:24px auto!important;background:#160f15!important;
+ color:#f1d7bd!important;border-color:#ba8c75!important
+}
+html[data-vcs-theme="vice-city-gazette"] .november-story .november-story-nav a{color:#f1d7bd!important}
+html[data-vcs-theme="vice-city-gazette"] .archive-page,
+html[data-vcs-theme="vice-city-gazette"] .notices-page{
+ background:#e4d4bd!important;color:#2d2025!important
+}
+html[data-vcs-theme="vice-city-gazette"] .archive-new-issue .archive-image img{
+ filter:none!important;object-position:center 25%!important
+}
+@media(max-width:1180px){
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-feature-grid{
+  grid-template-columns:minmax(0,1fr) minmax(0,1.45fr) minmax(0,1fr)!important
+ }
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-feature-grid .vcs-v3-card-black{grid-column:3;grid-row:2}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-feature-grid .vcs-v3-card-mullet{grid-column:3;grid-row:1}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-feature-grid .vcs-v3-lead{grid-column:1;grid-row:1/3}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-feature-grid .vcs-v3-lead-art{grid-column:2;grid-row:1/3}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-card-art img{height:160px}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lower-grid{grid-template-columns:1fr 1fr!important}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lower-grid .vcs-v3-strange,
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lower-grid .vcs-v3-subscribe{min-height:230px}
+ html[data-vcs-theme="vice-city-gazette"] .paper-nav a{padding:10px 12px!important;font-size:12px!important}
+}
+@media(max-width:800px){
+ html[data-vcs-theme="vice-city-gazette"] .newspaper-wrap{width:calc(100% - 12px)!important;margin:6px auto!important}
+ html[data-vcs-theme="vice-city-gazette"] .paper-header{padding:0 10px!important}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-paper{padding:11px!important}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-feature-grid{
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important
+ }
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-feature-grid .vcs-v3-lead{grid-column:1;grid-row:1}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-feature-grid .vcs-v3-lead-art{grid-column:2;grid-row:1;min-height:460px}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-feature-grid .vcs-v3-card-mullet{grid-column:1;grid-row:2}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-feature-grid .vcs-v3-card-black{grid-column:2;grid-row:2}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lead h1{font-size:clamp(2rem,4vw,3.15rem)!important}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-paper .vcs-v3-issue-meta{flex-wrap:wrap;font-size:10px!important}
+ html[data-vcs-theme="vice-city-gazette"] .november-story .article-hero{grid-template-columns:1fr!important}
+ html[data-vcs-theme="vice-city-gazette"] .november-story .article-hero-image{min-height:280px;max-height:440px}
+ html[data-vcs-theme="vice-city-gazette"] .november-story .article-hero-image img{max-height:440px!important}
+}
+@media(max-width:540px){
+ html[data-vcs-theme="vice-city-gazette"] .newspaper-wrap{width:100%!important;margin:0!important;border:0!important}
+ html[data-vcs-theme="vice-city-gazette"] .paper-header{padding:0 6px!important}
+ html[data-vcs-theme="vice-city-gazette"] .paper-nav{justify-content:center!important;gap:0!important}
+ html[data-vcs-theme="vice-city-gazette"] .paper-nav a{
+  font-size:10px!important;letter-spacing:.02em!important;padding:9px 7px!important
+ }
+ html[data-vcs-theme="vice-city-gazette"] .issue-strap{
+  font-size:9px!important;grid-template-columns:1fr auto!important;gap:6px
+ }
+ html[data-vcs-theme="vice-city-gazette"] .issue-strap span:last-child{display:none}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-feature-grid{grid-template-columns:1fr!important;gap:7px!important}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-feature-grid .vcs-v3-lead{grid-column:1;grid-row:1;padding:22px!important}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-feature-grid .vcs-v3-lead-art{
+  grid-column:1;grid-row:2;min-height:0!important;height:470px
+ }
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-feature-grid .vcs-v3-card-mullet{grid-column:1;grid-row:3}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-feature-grid .vcs-v3-card-black{grid-column:1;grid-row:4}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-card{padding:17px!important}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-card .vcs-v3-card-art img{height:240px!important}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lead h1{font-size:clamp(2.4rem,9vw,3.4rem)!important}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lower-grid{display:block!important}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lower-grid>*{margin-bottom:8px!important}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lower-grid .vcs-v3-card .vcs-v3-card-art img{
+  min-height:210px!important;height:100%!important
+ }
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-strange,
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-subscribe{min-height:235px}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-issue-meta span:nth-child(2){width:100%;order:-1}
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-issue-index{justify-content:center!important;gap:10px!important}
+ html[data-vcs-theme="vice-city-gazette"] .november-story .article-body{padding:25px 18px!important;font-size:17px!important}
+ html[data-vcs-theme="vice-city-gazette"] .november-story .article-hero-copy{padding:28px 20px!important}
+}
+@media(prefers-reduced-motion:reduce){
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-lead-art img,
+ html[data-vcs-theme="vice-city-gazette"] .vcs-v3-card-art img{transition:none}
+}
